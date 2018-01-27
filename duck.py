@@ -11,7 +11,7 @@ import requests
 
 from config import (
     IMAGE_SIZE, DUCK_IMAGE_DIR, BASE_SPEED, BASE_PADDING, ALIAS_FACTOR,
-    GOOGLE_LOGO_PAD,
+    GOOGLE_LOGO_PAD, ICON_PREFIX,
 )
 from google import streetview_url, static_map_url
 from scenario import Scenario, EXPERIENCE, SPEED, DISTANCE, MOTIVATION
@@ -69,18 +69,22 @@ class Duck:
         return self.get_travel()[-1]
 
     def get_map_url(self):
+        marker_fmt = dict(
+            icon_prefix=ICON_PREFIX,
+            finish='{},{}'.format(*self.route[-1]),
+            duck='{},{}'.format(*self.get_position()),
+        )
         return static_map_url(
             path='color:0x6666DDCC|weight:3|enc:{}'.format(
                 polyline.encode(self.route)
             ),
-            markers=(
-                ''
-                '{start}|{finish}|{duck}'
-            ).format(
-                start='{},{}'.format(*self.route[0]),
-                finish='{},{}'.format(*self.route[-1]),
-                duck='{},{}'.format(*self.get_position()),
-            ),
+            markers=[(
+                'anchor:center|icon:{icon_prefix}duck_end_icon.png|'
+                '{finish}'
+            ).format(**marker_fmt), (
+                'anchor:center|icon:{icon_prefix}duck_location_icon.png|'
+                '{duck}'
+            ).format(**marker_fmt)],
             size='{0}x{0}'.format(int(IMAGE_SIZE[1]/2)),
         )
 

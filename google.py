@@ -40,6 +40,6 @@ def static_map_url(**params):
             urlencode({
                 **params,
                 'key': GOOGLE_API_KEY,
-            })
+            }, doseq=True)
         )
     )
