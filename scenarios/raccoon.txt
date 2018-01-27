@@ -7,7 +7,7 @@ Leave
 <Follow>
 50 They wanted me to help them get some stuff out of a flooded dumpster. It was just floating in the back, easy. +Exp
 
-50 They wanted me to help them get some stuff out of a flooded dumpster. Had to dive down it. Gross. ++Exp
+50 They wanted me to help them get some stuff out of a flooded dumpster. Had to dive down it. Gross. -Motivation
 
 <Leave>
 100 Sorry, I need to keep going.
