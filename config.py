@@ -26,5 +26,5 @@ DELAY_MINIMUM = 1/30
 # the difference between the smallest and largest delays between scenarios
 DELAY_VARIANCE = 1/60
 
-# how long to give people to provide an answer
-DELAY_AUTOPLAY = 0.5
+# how long to give people to provide an answer, should be ~half an hour
+DELAY_AUTOPLAY = 1/30

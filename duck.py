@@ -194,7 +194,9 @@ class Duck:
             elif kind == EXPERIENCE:
                 self.experience += multiplier
             elif kind == SPEED:
-                self.speed = max(1, self.speed + multiplier)
+                self.speed = max(1, self.speed + int(
+                    multiplier * self.speed * 0.5
+                ))
             elif kind == DISTANCE:
                 self.progress = max(0, self.progress + (
                     self.speed * multiplier * DELAY_MINIMUM
@@ -226,7 +228,7 @@ class Duck:
 
             elif self.next_active < now():
                 answer = random.choice(self.scenario.answers)
-                outcome = self.resolve_scenario(answer['answer'])
+                outcome = self.scenario.outcome_for(answer['answer'])
 
             if outcome is None:
                 return
