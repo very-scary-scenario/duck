@@ -1,0 +1,31 @@
+<Scenario>
+Oh gosh. It’s a busy road, and there’s no crossing point. Twitter, what should I do? I need to get to the other side. Should I follow the road to search for a crossing point, attempt to cross here or turn back?
+
+Search
+Cross
+Turn back
+
+<Search> 
+20 I start walking along the road and find a little tunnel underneath the road! This means I don’t need to take a detour!
+
+60 I walk for a while and find a crossing. Nothing gained, nothing lost, but at least I don’t need to take a big detour.
+
+20 I follow the road for a while and eventually find a crossing point, but it meant a bit of a detour. -Distance
+
+<Cross>
+10 I dive between cars like an action movie hero or an 80’s video game frog! I get across the road quickly, and without incident and feel great for the journey ahead! +++Speed
+
+10 I’m about to start crossing between cars when I remember I can fly short distances. I fly over the road and wonder why I didn’t think of this before. +Distance
+
+10 I was about to cross the road, when a bus stopped and offered to pick me up! I handed over some duck money and, after the driver checked the exchange rate online, let me on! +Distance
+
+10 Why did the duck cross the road? To get to the other side, obviously. I charge across the road, these cars mean nothing to me! I am INVINCIBLE!
+
+10 I begin to cross the road when a sports car zooms past faster than the speed limit, immediately followed by police cars. The draught left by the high speed cars blew me back down the path. -Distance
+
+10 I cross the first carriageway of the road without issue, but the other side is busier. I slowly make my way across, dodging cars and trucks. I eventually make it to the other side, but it slowed me down a lot. -Speed
+
+<Turn Back>
+20 I turn around to begin to head back and some kids pick me up, jump and throw me over the road. With the wind under my wings, I glide safely to the other side of the road. Not sure if that was the kids intention, but success!
+
+80 Yeah, I should turn back, you’re right. This is too dangerous. I’ll find another way around. -Distance

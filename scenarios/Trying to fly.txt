@@ -1,0 +1,31 @@
+<Scenario>
+According to all known laws of aviation, ducks can fly. I forgot this until just now. Should I fly above the houses or stick to the ground?
+
+High
+Low
+Walk
+
+<High> 
+5 I met a friend! Another duck flying through the area gave me some directions to save some time! +++Distance +Speed
+
+30 The view is lovely up here! I can’t be up here for long, but I made good progress! +Distance
+
+50 I fly for a bit, but there’s nothing like walking to see the sights and the people, so back to it.
+
+15 Oh no! There’s a drone! It’s chasing me back the other way! -Distance
+
+<Low>
+15 Children cheer as a pass through the streets. I feel great and I’ve saved a lot of time! +Speed +Distance
+
+35 I manoeuvre through some traffic, but this seems kinda dangerous. I should get back to walking.
+
+50 OUCH! I crashed into a car door. I feel a bit dizzy, time to take things slow for a bit. -Speed
+
+<Walk>
+25 You make a good point. I should definitely walk. It’s the best way to see the world! I should get a move on! +Speed
+
+25 I guess I should walk. That’s the name of the game anyway.
+
+25 Yeah, who ever heard of ducks flying. What a daft idea…probably…hmmm… -Speed
+
+25 Oh…there’s a brick wall here…I’m gonna have to turn back. If only I flew… -Distance

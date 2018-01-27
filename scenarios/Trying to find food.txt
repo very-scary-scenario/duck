@@ -1,0 +1,28 @@
+<Scenario>
+I’m getting hungry, but there’s no food places nearby. Should I go off-route to try and find some, or phone a takeaway?
+
+Search
+Takeaway
+Continue
+
+<Search> 
+40 I take a side road and quickly find a small ramen restaurant. I love ramen! The owner gave me some food and I continued on my way losing very little time. +Speed +Exp
+
+40 I walked for a while and, although I didn’t find any restaurant, it turned out to be a shortcut! I’ve saved some time! +Distance
+
+20 Hmmm…not really found anywhere to eat around here, and I think I’m a bit lost too… -Speed -Distance
+
+<Takeaway>
+15 By imitating a dial-up modem, I used a payphone to order a takeaway. It got here quickly and the driver let me have it for free to be  +Speed +Exp
+
+35 I managed to make a phone call, but struggled to explain myself using nothing but quacks. Never mind.
+
+50 I spent a while trying to order food, but I’m a duck. I can’t work the telephone. I’m gonna give up and carry on. -Speed
+
+<Continue>
+
+20 I continued on for a bit and I found a food stall on the way! I got a bit of food and I feel refreshed! +Speed
+
+60 Yeah, I should continue on my route for a while. There’ll be a food place later, I’m sure.
+
+20 I’ll just continue on, but I’m really hungry. I should walk at a slower pace to spread out my energy. -Speed
