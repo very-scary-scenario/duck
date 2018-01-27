@@ -1,0 +1,13 @@
+<Scenario>
+Passed by a restaurant and there's a raccoon telling me to follow them to the back. They want help with something.
+
+Follow
+Leave
+
+<Follow>
+50 They wanted me to help them get some stuff out of a flooded dumpster. It was just floating in the back, easy. +Exp
+
+50 They wanted me to help them get some stuff out of a flooded dumpster. Had to dive down it. Gross. ++Exp
+
+<Leave>
+100 Sorry, I need to keep going.
