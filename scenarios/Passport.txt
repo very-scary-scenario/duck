@@ -6,25 +6,25 @@ Flap
 Escape
 
 <Quack> 
-35 I quacked until the person went away! Success! +Exp
+25 I quacked until the person went away! Success! +Exp
 
-45 
+40 After quacking for a solid twenty minutes, the human realised I was a duck and let me go. I'm leaving before they come back!
 
-20 I bought a ticket to see the comedy and waited an hour for it to start, but it turns out I was inside the broom cupboard. -Speed 
+35 I quacked but they asked me for my passport again. I managed to get away by going back the way I came, but that was scary! -Distance -Motivation 
 
 <Flap>
-15 The horror film wasn't scary but I'm not at the cinema any more and I'm making good time don't talk to me. +Speed +Exp
+15 My strong flaps kick up some dust, distracting the human enough to allow me to escape. I'm one smart duck! +Speed +Exp
 
-45 The horror film was all about drowning but I'm a duck and it doesn't seem very realistic to me. 1 out of 5 duck stars.
+45 While my flapping was inaffective, it did distract the human enough to change the subject. It must be my impressive wingspan.
 
-40 Horror? Hah! Not really. I'm not scared. I'll move in just a second but I'm not scared. You're scared. -Speed
+40 My flapping did indeed get me away from the human, but it seems I'm a little rusty at this flying thing and I shot off in the wrong direction. Oops! #JustDuckProblems -Distance
 
 <Escape>
-30 The duckumentary was the real-life story of a courageous bear and his duck friend. Its messages about bravery and hope will surely make it a classic! +Exp
+40 The human underestimated the strength behind these powerful webbed feet and I sped right past them. Later human! +Speed +Exp
 
-35 I have to say, I was expecting more ducks in that duckumentary. Bit of a shame.
+35 I tried to escape by running through the human's legs, but I hit my beak on their knee and it might bruise. Got away though. 
 
-35 The duckumentary was probably good but I fell asleep and there's a different film on now. Oops. -Speed
+25 I panicked when trying to escape and ran in the direction of the human. I guess I have a passport now? -Speed -Motivation
 
 
 
