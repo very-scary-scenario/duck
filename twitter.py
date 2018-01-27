@@ -48,14 +48,28 @@ def get_duck():
 if __name__ == '__main__':
     duck, filename = get_duck()
 
-    # XXX check for responses here
+    tweets = [
+        tw for tw in
+        twitter.user_timeline(twitter.me())
+        if tw.in_reply_to_status_id is None
+        and not tw.retweeted
+    ]
+
+    if tweets:
+        latest_tweet = tweets[0]
+    else:
+        latest_tweet is None
 
     advancement = duck.advance()
 
     if advancement is not None:
         for string in advancement:
             if duck.scenario is None and duck.success is None:
-                twitter.update_status(string)
+                twitter.update_status(
+                    string,
+                    in_reply_to_status_id=latest_tweet.id
+                    if latest_tweet else None
+                )
             else:
                 image = duck.make_image()
                 image.save(DUCK_IMAGE_LOCATION)
