@@ -1,12 +1,16 @@
 from copy import copy
+from datetime import datetime, timedelta
 import os
 import random
 
+from camel import Camel
+from dateutil.parser import parse as parse_date
 from django.contrib.gis.geos import LineString
 import PIL
 import PIL.ImageDraw
 import PIL.ImageFont
 import polyline
+from pytz import utc
 import requests
 
 from config import (
@@ -14,13 +18,20 @@ from config import (
     GOOGLE_LOGO_PAD, ICON_PREFIX,
 )
 from google import streetview_url, static_map_url
-from scenario import Scenario, EXPERIENCE, SPEED, DISTANCE, MOTIVATION
+from scenario import (
+    Scenario, EXPERIENCE, SPEED, DISTANCE, MOTIVATION, registry,
+)
 
 
 def _length_in_km(ls):
     transformed_ls = copy(ls)
     transformed_ls.transform(3857)
     return transformed_ls.length/1000
+
+
+def now():
+    dt = datetime.utcnow()
+    return dt.replace(tzinfo=utc)
 
 
 class Duck:
@@ -30,6 +41,9 @@ class Duck:
         self.speed = BASE_SPEED
         self.motivation = 10
         self.experience = 0
+        self.scenario = None
+        self.success = None
+        self.next_active = now()
 
     def total_distance(self):
         return _length_in_km(self.route)
@@ -146,32 +160,25 @@ class Duck:
 
         return image
 
-    def advance(self):
-        hours = random.random() * 5
-        print('\n{:.2f} hours pass'.format(hours))
-        self.progress += (hours * self.speed)
+    def initiate_scenario(self):
         if self.progress > self.total_distance():
             print('I made it!')
+            self.success = True
             return
 
-        print(self.progress_summary())
-        print()
-        scenario = Scenario.get_random(self)
-        duck.make_image().save('image.png')
+        self.scenario = Scenario.get_random(self)
+        self.delay_next_activity(30)
 
-        print('{}\n\n{}'.format(
-            scenario.prompt,
-            '\n'.join(('> {}'.format(a['answer']) for a in scenario.answers)),
-        ))
+        yield '{}\n\n{}'.format(self.scenario.prompt, '\n'.join((
+            '> {}'.format(a['answer']) for a in self.scenario.answers
+        )))
 
-        while True:
-            outcome = scenario.outcome_for(input('\nreply: ').lower())
-            if outcome:
-                break
+    def resolve_scenario(self, outcome):
+        self.scenario = None
 
-        print('\n{}\n\n{}'.format(outcome['flavour'], ' '.join([
+        yield '{}\n\n{}'.format(outcome['flavour'], ' '.join([
             e['source'] for e in outcome['effects']
-        ])).strip())
+        ])).strip()
 
         self.speed = BASE_SPEED
 
@@ -193,10 +200,62 @@ class Duck:
                 )
 
             if self.motivation <= 0:
-                print("I give up, I'm going home.")
-                return
+                self.success = False
+                yield "I give up, I'm going home."
 
-        self.advance()
+        hours = (random.random() * 2) + 1
+        self.delay_next_activity(hours)
+        self.progress += (hours * self.speed)
+
+    def delay_next_activity(self, hours):
+        self.next_active = now() + timedelta(hours=hours)
+
+    def advance(self, response=None):
+        if self.scenario is None:
+            if self.next_active < now():
+                return self.initiate_scenario()
+        else:
+            outcome = None
+
+            if response is not None:
+                outcome = self.scenario.outcome_for(response.lower())
+
+            elif self.next_active < now():
+                answer = random.choice(self.scenario.answers)
+                outcome = self.resolve_scenario(answer['answer'])
+
+            if outcome is None:
+                return
+            else:
+                return self.resolve_scenario(outcome)
+
+
+@registry.dumper(Duck, 'duck', version=None)
+def _dump_duck(duck):
+    return {
+        'route': polyline.encode(duck.route),
+        'progress': duck.progress,
+        'speed': duck.speed,
+        'motivation': duck.motivation,
+        'experience': duck.experience,
+        'scenario': duck.scenario,
+        'success': duck.success,
+        'next_active': duck.next_active.isoformat(),
+    }
+
+
+@registry.loader('duck', version=None)
+def _load_duck(data, version):
+    duck = Duck(LineString(
+        polyline.decode(data.pop('route')), srid=4326,
+    ))
+
+    duck.next_active = parse_date(data.pop('next_active'))
+
+    for k, v in data.items():
+        setattr(duck, k, v)
+
+    return duck
 
 
 def _sample_duck():
@@ -212,6 +271,38 @@ def _sample_duck():
 
 
 if __name__ == '__main__':
-    duck = _sample_duck()
-    duck.progress = 200
-    duck.advance()
+    from sys import argv
+
+    camel = Camel([registry])
+
+    try:
+        with open('cli-duck.yaml', 'r') as f:
+            duck = camel.load(f.read())
+    except FileNotFoundError:
+        duck = _sample_duck()
+
+    response = ' '.join(argv[1:]) or None
+    advancement = duck.advance(response=response)
+    if advancement is None:
+        if duck.scenario is None:
+            print(
+                'there is nothing to be done right now, come back when the '
+                'duck has made some progress; should be about {}'
+                .format(duck.next_active - now())
+            )
+        if response is None:
+            print('please provide an instruction as an argument')
+        else:
+            print(
+                '{!r} is not a response we are expecting right now; please '
+                'try one of:\n\n{}'.format(
+                    response,
+                    '\n'.join([a['answer'] for a in duck.scenario.answers])
+                )
+            )
+    else:
+        for string in advancement:
+            print(string)
+
+    with open('cli-duck.yaml', 'w') as f:
+        f.write(camel.dump(duck))

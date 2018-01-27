@@ -1,7 +1,11 @@
 import chardet
 import os
 import random
+
+from camel import CamelRegistry
 import regex as re
+
+registry = CamelRegistry()
 
 SCENARIO_DIR = os.path.join(os.path.dirname(__file__), 'scenarios')
 
@@ -19,8 +23,8 @@ EFFECTS = [
 
 
 class Scenario:
-    def __init__(self, duck, filename):
-        self.duck = duck
+    def __init__(self, filename):
+        self._filename = filename
         self.prompt = None
         self.answers = []
 
@@ -76,7 +80,7 @@ class Scenario:
 
     @classmethod
     def get_random(cls, duck):
-        return cls(duck, os.path.join(SCENARIO_DIR, random.choice([
+        return cls(os.path.join(SCENARIO_DIR, random.choice([
             fn for fn in os.listdir(SCENARIO_DIR)
             if fn.endswith('.txt') and not fn.startswith('.')
         ])))
@@ -102,12 +106,22 @@ class Scenario:
 
         return outcome
 
-if __name__ == '__main__':
-    from duck import _sample_duck
-    duck = _sample_duck()
 
+@registry.dumper(Scenario, 'scenario', version=None)
+def _dump_scenario(scenario):
+    return {
+        'filename': scenario._filename,
+    }
+
+
+@registry.loader('scenario', version=None)
+def _load_scenario(data, version):
+    return Scenario(data['filename'])
+
+
+if __name__ == '__main__':
     print([
-        Scenario(duck, os.path.join(SCENARIO_DIR, fn))
+        Scenario(os.path.join(SCENARIO_DIR, fn))
         for fn in os.listdir(SCENARIO_DIR)
         if fn.endswith('.txt') and not fn.startswith('.')
     ])
