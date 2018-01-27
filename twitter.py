@@ -45,9 +45,7 @@ def get_duck():
         return (_sample_duck(), None)
 
 
-if __name__ == '__main__':
-    duck, filename = get_duck()
-
+def get_latest_duck_tweet():
     tweets = [
         tw for tw in
         twitter.user_timeline(twitter.me())
@@ -56,9 +54,13 @@ if __name__ == '__main__':
     ]
 
     if tweets:
-        latest_tweet = tweets[0]
-    else:
-        latest_tweet is None
+        return tweets[0]
+
+
+if __name__ == '__main__':
+    duck, filename = get_duck()
+
+    latest_tweet = get_latest_duck_tweet()
 
     advancement = duck.advance()
 
