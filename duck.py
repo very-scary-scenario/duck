@@ -1,8 +1,13 @@
 from copy import copy
+import os
+import random
 
 from django.contrib.gis.geos import LineString
+import PIL
 import polyline
+import requests
 
+from config import IMAGE_SIZE, DUCK_IMAGE_DIR
 from google import directions, streetview_url
 
 
@@ -36,8 +41,35 @@ class Duck:
 
         return self.get_travel()[-1]
 
-    def get_current_view_url(self):
-        return streetview_url(*self.get_position())
+    def make_image(self):
+        streetview = requests.get(
+            streetview_url(*self.get_position()),
+            stream=True,
+        )
+        image = PIL.Image.new(mode='RGBA', size=IMAGE_SIZE)
+        streetview_image = PIL.Image.open(streetview.raw)
+        image.paste(streetview_image)
+
+        duck_image = PIL.Image.open(
+            os.path.join(DUCK_IMAGE_DIR, random.choice([
+                fn for fn in
+                os.listdir(DUCK_IMAGE_DIR)
+                if fn.endswith('.png') and not fn.startswith('.')
+            ]))
+        )
+        target_height = int(IMAGE_SIZE[1]*0.75)
+        target_width = int(
+            duck_image.width * (target_height / duck_image.height)
+        )
+        duck_image = duck_image.resize((
+            target_width, target_height,
+        ), resample=PIL.Image.BICUBIC)
+
+        image.paste(duck_image, (
+            IMAGE_SIZE[0]-duck_image.width, IMAGE_SIZE[1]-duck_image.height
+        ), duck_image)
+
+        return image
 
     def step(self, hours):
         self.progress += (hours * self.speed)
@@ -50,7 +82,5 @@ if __name__ == '__main__':
         srid=4326,
     ))
 
-    print(duck.get_position())
-    for i in range(50):
-        duck.step(5)
-        print(duck.get_current_view_url())
+    duck.step(random.random() * 50)
+    duck.make_image().save('image.png')

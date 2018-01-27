@@ -3,6 +3,7 @@ from urllib.parse import urlencode
 
 import requests
 
+from config import IMAGE_SIZE
 from secrets import GOOGLE_API_KEY
 
 
@@ -22,7 +23,7 @@ def streetview_url(*coords):
     return (
         'https://maps.googleapis.com/maps/api/streetview?{}'.format(
             urlencode({
-                'size': '800x400',
+                'size': '{}x{}'.format(*IMAGE_SIZE),
                 'location': '{},{}'.format(*coords),
                 'fov': 90,
                 'heading': int(random() * 360),

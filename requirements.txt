@@ -2,3 +2,4 @@ requests
 shapely==1.6.4
 polyline==1.3.2
 django==2.0.1
+pillow==5.0.0
