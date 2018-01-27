@@ -4,11 +4,16 @@ import random
 
 from django.contrib.gis.geos import LineString
 import PIL
+import PIL.ImageDraw
+import PIL.ImageFont
 import polyline
 import requests
 
-from config import IMAGE_SIZE, DUCK_IMAGE_DIR
-from google import streetview_url
+from config import (
+    IMAGE_SIZE, DUCK_IMAGE_DIR, BASE_SPEED, BASE_PADDING, ALIAS_FACTOR,
+    GOOGLE_LOGO_PAD,
+)
+from google import streetview_url, static_map_url
 from scenario import Scenario, EXPERIENCE, SPEED, DISTANCE, MOTIVATION
 
 
@@ -22,7 +27,7 @@ class Duck:
     def __init__(self, route):
         self.route = route
         self.progress = 0
-        self.speed = 4
+        self.speed = BASE_SPEED
         self.motivation = 10
         self.experience = 0
 
@@ -46,13 +51,15 @@ class Duck:
 
     def progress_summary(self):
         return (
-            '{progress:.1f} km travelled\n'
-            '{remaining:.1f} km still remaining'
+            '{progress:.1f} / {total:.1f} km travelled\n'
+            'Speed: {speed}\n'
+            'Motivation: {motivation}\n'
+            'Experience: {experience}\n'
             .format(
-                progress=self.progress,
-                remaining=self.total_distance() - self.progress,
+                total=self.total_distance(),
+                **self.__dict__
             )
-        )
+        ).strip()
 
     def get_position(self):
         """
@@ -61,13 +68,28 @@ class Duck:
 
         return self.get_travel()[-1]
 
+    def get_map_url(self):
+        return static_map_url(
+            path='color:0x6666DDCC|weight:3|enc:{}'.format(
+                polyline.encode(self.route)
+            ),
+            markers=(
+                ''
+                '{start}|{finish}|{duck}'
+            ).format(
+                start='{},{}'.format(*self.route[0]),
+                finish='{},{}'.format(*self.route[-1]),
+                duck='{},{}'.format(*self.get_position()),
+            ),
+            size='{0}x{0}'.format(int(IMAGE_SIZE[1]/2)),
+        )
+
     def make_image(self):
-        streetview = requests.get(
+        image = PIL.Image.new(mode='RGBA', size=IMAGE_SIZE)
+        streetview_image = PIL.Image.open(requests.get(
             streetview_url(*self.get_position()),
             stream=True,
-        )
-        image = PIL.Image.new(mode='RGBA', size=IMAGE_SIZE)
-        streetview_image = PIL.Image.open(streetview.raw)
+        ).raw)
         image.paste(streetview_image)
 
         duck_image = PIL.Image.open(
@@ -83,11 +105,40 @@ class Duck:
         )
         duck_image = duck_image.resize((
             target_width, target_height,
-        ), resample=PIL.Image.BICUBIC)
+        ), resample=PIL.Image.ANTIALIAS)
 
         image.paste(duck_image, (
             IMAGE_SIZE[0]-duck_image.width, IMAGE_SIZE[1]-duck_image.height
         ), duck_image)
+
+        text_image = PIL.Image.new(
+            mode='RGBA',
+            size=(IMAGE_SIZE[0]*ALIAS_FACTOR, IMAGE_SIZE[1]*ALIAS_FACTOR)
+        )
+        font = PIL.ImageFont.truetype(os.path.join(
+            os.path.dirname(__file__), 'fonts', 'lato', 'Lato-Bold.ttf',
+        ), int(text_image.height/70))
+        text_draw = PIL.ImageDraw.Draw(text_image)
+
+        text_draw.text((  # drop shadow
+            int(BASE_PADDING + font.size/9),
+            int(BASE_PADDING + font.size/9),
+        ), self.progress_summary(), (0, 0, 0), font=font)
+        text_draw.text((  # the text itself
+            BASE_PADDING, BASE_PADDING,
+        ), self.progress_summary(), (255, 255, 255), font=font)
+
+        text_image.resize((image.width, image.height),
+                          resample=PIL.Image.ANTIALIAS)
+
+        image.paste(text_image, (0, 0), text_image)
+
+        map_image = PIL.Image.open(requests.get(
+            self.get_map_url(), stream=True,
+        ).raw)
+        image.paste(map_image, (
+            BASE_PADDING, (image.height - GOOGLE_LOGO_PAD) - map_image.height,
+        ))
 
         return image
 
@@ -102,7 +153,7 @@ class Duck:
         print(self.progress_summary())
         print()
         scenario = Scenario.get_random(self)
-        # duck.make_image().save('image.png')
+        duck.make_image().save('image.png')
 
         print('{}\n\n{}'.format(
             scenario.prompt,
@@ -117,6 +168,8 @@ class Duck:
         print('\n{}\n\n{}'.format(outcome['flavour'], ' '.join([
             e['source'] for e in outcome['effects']
         ])).strip())
+
+        self.speed = BASE_SPEED
 
         for effect in outcome['effects']:
             kind = effect['kind']
@@ -156,4 +209,5 @@ def _sample_duck():
 
 if __name__ == '__main__':
     duck = _sample_duck()
+    duck.progress = 200
     duck.advance()

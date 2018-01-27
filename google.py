@@ -32,3 +32,14 @@ def streetview_url(*coords):
             })
         )
     )
+
+
+def static_map_url(**params):
+    return (
+        'https://maps.googleapis.com/maps/api/staticmap?{}'.format(
+            urlencode({
+                **params,
+                'key': GOOGLE_API_KEY,
+            })
+        )
+    )
