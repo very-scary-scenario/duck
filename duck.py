@@ -211,6 +211,9 @@ class Duck:
         self.next_active = now() + timedelta(hours=hours)
 
     def advance(self, response=None):
+        if self.success is not None:
+            raise RuntimeError('this game is already over')
+
         if self.scenario is None:
             if self.next_active < now():
                 return self.initiate_scenario()
@@ -281,8 +284,13 @@ if __name__ == '__main__':
     except FileNotFoundError:
         duck = _sample_duck()
 
+    if duck.success is not None:
+        print('your saved duck is no longer journeying; starting a new one...')
+        duck = _sample_duck()
+
     response = ' '.join(argv[1:]) or None
     advancement = duck.advance(response=response)
+
     if advancement is None:
         if duck.scenario is None:
             print(
