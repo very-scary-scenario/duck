@@ -34,7 +34,7 @@ class Scenario:
 
             for line in lines:
                 answer_match = re.match(r'<(.*)>$', line)
-                outcome_match = re.match(r'(\d+) (.*?)(\W[+-][^ ]*)*$', line)
+                outcome_match = re.match(r'(\d+) (.*?)(\W[+-]+[^ ]*)*$', line)
 
                 if line.lower() == '<scenario>':
                     continue
@@ -60,7 +60,7 @@ class Scenario:
                         line, filename))
 
     def _make_effect(self, source):
-        kind = source[1:].lower()
+        kind = source.lstrip('-+').lower()
 
         if kind not in EFFECTS:
             raise RuntimeError(
@@ -69,6 +69,7 @@ class Scenario:
 
         return {
             'positive': source[0] == '+',
+            'multiplier': len(source) - len(kind),
             'kind': kind,
             'source': source,
         }

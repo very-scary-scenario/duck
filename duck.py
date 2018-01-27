@@ -119,8 +119,10 @@ class Duck:
         ])).strip())
 
         for effect in outcome['effects']:
-            multiplier = 1 if effect['positive'] else -1
             kind = effect['kind']
+            multiplier = (
+                1 if effect['positive'] else -1
+            ) * effect['multiplier']
 
             if kind == MOTIVATION:
                 self.motivation += multiplier
