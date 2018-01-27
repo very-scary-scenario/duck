@@ -1,0 +1,15 @@
+<Scenario>
+Gosh, it's so hot out here. There's a nice tree I could sit under, but I'm not sure if I should stop or not. What do you think?
+
+Shade
+Leave
+
+<Shade> 
+65 Sitting under the shade was a great idea, my feathers were starting to burn! +Exp
+
+35 I sat in the shade for a little while but the sun moved and it's hot again. Waste of time! -Speed 
+
+<Leave>
+30 Leaving was the right move as the clouds have come out! I'm making great progress and I'm not roasting any more! +Speed +Exp
+
+70 I left, hoping to make some more progress on my journey, but it's just too hot. I'm chargrilled. -Motivation -Speed
