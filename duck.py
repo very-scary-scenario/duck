@@ -290,7 +290,9 @@ if __name__ == '__main__':
         duck = _sample_duck()
 
     response = ' '.join(argv[1:]) or None
+
     advancement = duck.advance(response=response)
+    print(duck.progress_summary(), end='\n\n')
 
     if advancement is None:
         if duck.scenario is None:
@@ -299,7 +301,7 @@ if __name__ == '__main__':
                 'duck has made some progress; should be about {}'
                 .format(duck.next_active - now())
             )
-        if response is None:
+        elif response is None:
             print('please provide an instruction as an argument')
         else:
             print(
