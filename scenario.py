@@ -5,9 +5,22 @@ import regex as re
 
 SCENARIO_DIR = os.path.join(os.path.dirname(__file__), 'scenarios')
 
+EXPERIENCE = 'exp'
+SPEED = 'speed'
+DISTANCE = 'distance'
+MOTIVATION = 'motivation'
+
+EFFECTS = [
+    EXPERIENCE,
+    SPEED,
+    DISTANCE,
+    MOTIVATION,
+]
+
 
 class Scenario:
-    def __init__(self, filename):
+    def __init__(self, duck, filename):
+        self.duck = duck
         self.prompt = None
         self.answers = []
 
@@ -34,21 +47,66 @@ class Scenario:
                 elif not self.answers:
                     continue
                 elif outcome_match:
-                    print(line)
                     self.answers[-1]['outcomes'].append({
                         'probability': int(outcome_match.group(1)),
                         'flavour': outcome_match.group(2),
                         'effects': [
-                            c.strip() for c in outcome_match.captures(3)
+                            self._make_effect(c.strip())
+                            for c in outcome_match.captures(3)
                         ],
                     })
                 else:
                     raise RuntimeError('could not parse {!r} from {}'.format(
                         line, filename))
 
+    def _make_effect(self, source):
+        kind = source[1:].lower()
+
+        if kind not in EFFECTS:
+            raise RuntimeError(
+                '{!r} is not an effect i understand'.format(kind)
+            )
+
+        return {
+            'positive': source[0] == '+',
+            'kind': kind,
+            'source': source,
+        }
+
     @classmethod
-    def get_random(cls):
-        return cls(os.path.join(SCENARIO_DIR, random.choice([
+    def get_random(cls, duck):
+        return cls(duck, os.path.join(SCENARIO_DIR, random.choice([
             fn for fn in os.listdir(SCENARIO_DIR)
             if fn.endswith('.txt') and not fn.startswith('.')
         ])))
+
+    def answer_for(self, response):
+        for answer in self.answers:
+            if answer['answer'].lower() in response.lower():
+                return answer
+
+    def outcome_for(self, response):
+        answer = self.answer_for(response)
+        if answer is None:
+            return
+
+        total_probability = sum((o['probability'] for o in answer['outcomes']))
+        seed = random.random() * total_probability
+        cumulative = 0
+
+        for outcome in answer['outcomes']:
+            cumulative += outcome['probability']
+            if cumulative >= seed:
+                break
+
+        return outcome
+
+if __name__ == '__main__':
+    from duck import _sample_duck
+    duck = _sample_duck()
+
+    print([
+        Scenario(duck, os.path.join(SCENARIO_DIR, fn))
+        for fn in os.listdir(SCENARIO_DIR)
+        if fn.endswith('.txt') and not fn.startswith('.')
+    ])
