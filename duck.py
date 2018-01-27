@@ -9,6 +9,7 @@ import requests
 
 from config import IMAGE_SIZE, DUCK_IMAGE_DIR
 from google import directions, streetview_url
+from scenario import Scenario
 
 
 class Duck:
@@ -33,6 +34,12 @@ class Duck:
                 return last_ls
 
             last_ls = ls
+
+    def progress_summary(self):
+        return (
+            '{} km travelled\n'
+            '{} km still remaining'
+        )
 
     def get_position(self):
         """
@@ -71,8 +78,13 @@ class Duck:
 
         return image
 
-    def step(self, hours):
+    def advance(self):
+        hours = random.random() * 5
+        print('{:.2f} hours pass'.format(hours))
         self.progress += (hours * self.speed)
+        scenario = Scenario.get_random()
+        print(scenario)
+        duck.make_image().save('image.png')
 
 
 if __name__ == '__main__':
@@ -82,5 +94,4 @@ if __name__ == '__main__':
         srid=4326,
     ))
 
-    duck.step(random.random() * 50)
-    duck.make_image().save('image.png')
+    duck.advance()
