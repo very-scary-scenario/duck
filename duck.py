@@ -94,7 +94,7 @@ class Duck:
                 polyline.encode(self.route)
             ),
             markers=[(
-                'anchor:center|icon:{icon_prefix}duck_end_icon.png|'
+                'anchor:bottomleft|icon:{icon_prefix}duck_end_icon.png|'
                 '{finish}'
             ).format(**marker_fmt), (
                 'anchor:center|icon:{icon_prefix}duck_location_icon.png|'
