@@ -1,0 +1,27 @@
+<Scenario>
+I followed some tooting sounds and found a human playing music out in the open. Do you think it'd be okay for a fine duck like myself to stay and enjoy it?
+
+Tip
+Listen
+Request
+
+<Tip> 
+30 I gave the human some of my hard-earned duck money and they were very happy! That's put a real spring in my step :) +Speed +Exp
+
+35 I gave the human some of my duck money but they complained about the current bad exchange rates. I stayed for the music anyway.
+
+35 When I tried to give the musician some of my duck money, they stopped playing. Is it that weird to see a duck with cash out here? Come on... -Speed 
+
+<Listen>
+40 Listening to the music has reinvigorated me! I feel like I can walk for days, and I probably will! +Speed +Exp
+
+35 I listened to the music for a while but it became more and more off key. The musician seemed distracted by me? I was just trying to take a photo...
+
+25 I sat down to listen to the music but the human packed up and left. I don't think they saw me :( -Speed
+
+<Request>
+30 The human was happy to play my request! I haven't waddled this much in a long time! +Exp
+
+25 The human was okay with playing a request but he doesn't know much duck music. Ah well.
+
+45 I tried to ask the human to play a request but they couldn't hear me over the music. I quacked my loudest, too. -Speed

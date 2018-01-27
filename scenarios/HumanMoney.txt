@@ -1,0 +1,32 @@
+<Scenario>
+Twitter, help me out. I found some human money on the ground and I don't know what to do with it (I'm a duck). What shall I do?
+
+Quack
+Keep
+Ignore
+
+<Quack> 
+55 I quacked until someone showed up. They seemed happy, and they even gave me some bread! Yay! +Speed +Exp
+
+25 I quacked for a bit but now my throat is sore. I'll just leave it here.
+
+20 I quacked for a little while but someone told me to keep it down. Rude. -Speed 
+
+<Keep>
+25 This money is mine now, so I'm going to get a taxi. I deserve it! +Distance +Exp
+
+35 I've decided to put the human money in my duck pocket, to save for a rainy day.  
+
+40 This money is kinda cumbersome but I managed to balance it on my back. It'll stay there if I move slowly. -Speed
+
+<Ignore>
+45 Money successfully ignored! Time to get back to duck things. +Speed +Exp
+
+20 I tried to ignore the money but it's just too shiny. I think I'll sit here for a bit. -Speed
+
+35 I am disappointed to tell you that I have unsucessfully ignored the money. -Speed
+
+
+
+
+

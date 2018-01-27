@@ -1,0 +1,27 @@
+<Scenario>
+TWITTER! I SMELL BREAD! Do you think... I could go have some? I don't have human money!
+
+Eat
+Ask
+Leave
+
+<Eat> 
+20 Fresh bread! I took some of the free samples and they were soooo gooood. I'm so happy! +Speed +Exp
+
+50 I took a bite out of the bread but I might have upset a human. Sorry human.
+
+30 I tried to eat the bread but I got shouted at :( Guess I should go. 
+
+<Ask>
+25 I asked the human if I could have some bread and they said yes! Thank you, duck fluent human! +Speed +Exp
+
+50 I asked the human about the bread but they couldn't understand me...
+
+25 Scary! I asked about the bread but the human chased me out of their home! Rude! -Distance
+
+<Leave>
+30 It'd be rude of me to ask a stranger for bread, so let's get back on the road! +Speed +Exp
+
+40 I left the bread behind, but now it's all I can think about...
+
+20 I'm far from the bread but I can still smell it. I'm haunted by the ghost of fresh bread. 

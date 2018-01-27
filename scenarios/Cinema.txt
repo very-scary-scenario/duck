@@ -1,0 +1,39 @@
+<Scenario>
+Hey uhh, there's a cinema all the way out here. What should I watch? I might regret not taking the opportunity!
+
+Comedy
+Horror
+Duckumentary
+
+<Comedy> 
+35 I watched that new comedy with Sylvy McQuack! It was a very fun duck comedy. +Exp
+
+45 It was a pretty film but not a great comedy. I didn't understand some of the jokes. 2 out of 5 duck stars.
+
+20 I bought a ticket to see the comedy and waited an hour for it to start, but it turns out I was inside the broom cupboard. -Speed 
+
+<Horror>
+15 The horror film wasn't scary but I'm not at the cinema any more and I'm making good time don't talk to me. +Speed +Exp
+
+45 The horror film was all about drowning but I'm a duck and it doesn't seem very realistic to me. 1 out of 5 duck stars.
+
+40 Horror? Hah! Not really. I'm not scared. I'll move in just a second but I'm not scared. You're scared. -Speed
+
+<Duckumentary>
+30 The duckumentary was the real-life story of a courageous bear and his duck friend. Its messages about bravery and hope will surely make it a classic! +Exp
+
+35 I have to say, I was expecting more ducks in that duckumentary. Bit of a shame.
+
+35 The duckumentary was probably good but I fell asleep and there's a different film on now. Oops. -Speed
+
+
+
+
+
+
+
+
+
+
+
+
