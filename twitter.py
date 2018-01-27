@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
     if advancement is not None:
         for string in advancement:
-            if duck.scenario is None:
+            if duck.scenario is None and duck.success is None:
                 twitter.update_status(string)
             else:
                 image = duck.make_image()

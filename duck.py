@@ -163,8 +163,8 @@ class Duck:
 
     def initiate_scenario(self):
         if self.progress > self.total_distance():
-            print('I made it!')
             self.success = True
+            yield 'I made it!'
             return
 
         self.scenario = Scenario.get_random(self)
