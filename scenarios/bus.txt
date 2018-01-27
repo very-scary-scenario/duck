@@ -1,0 +1,20 @@
+<Scenario>
+There's a bus stop here. Should I wait for the bus?
+
+Wait
+Continue
+
+<Wait>
+10 I should have read the timetable, it's not coming today. -Motivation
+
+10 They don't sell tickets onboard anymore. -Motivation
+
+05 They don't take duck money. -Motivation
+
+75 🚌 +Speed
+
+
+<Continue>
+10 As I walk the bus drives past me. My feet are sore, maybe I should have waited for it? -Motivation
+
+90 Pressing onwards.
