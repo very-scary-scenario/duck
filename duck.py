@@ -15,7 +15,8 @@ import requests
 
 from config import (
     IMAGE_SIZE, DUCK_IMAGE_DIR, BASE_SPEED, BASE_PADDING, ALIAS_FACTOR,
-    GOOGLE_LOGO_PAD, ICON_PREFIX,
+    GOOGLE_LOGO_PAD, ICON_PREFIX, DELAY_MINIMUM, DELAY_VARIANCE,
+    DELAY_AUTOPLAY,
 )
 from google import streetview_url, static_map_url
 from scenario import (
@@ -167,7 +168,7 @@ class Duck:
             return
 
         self.scenario = Scenario.get_random(self)
-        self.delay_next_activity(30)
+        self.delay_next_activity(DELAY_AUTOPLAY)
 
         yield '{}\n\n{}'.format(self.scenario.prompt, '\n'.join((
             '> {}'.format(a['answer']) for a in self.scenario.answers
@@ -195,15 +196,15 @@ class Duck:
             elif kind == SPEED:
                 self.speed = max(1, self.speed + multiplier)
             elif kind == DISTANCE:
-                self.progress = max(
-                    0, self.progress + (self.speed * multiplier),
-                )
+                self.progress = max(0, self.progress + (
+                    self.speed * multiplier * DELAY_MINIMUM
+                ))
 
             if self.motivation <= 0:
                 self.success = False
                 yield "I give up, I'm going home."
 
-        hours = (random.random() * 2) + 1
+        hours = DELAY_MINIMUM + (random.random() * DELAY_VARIANCE)
         self.delay_next_activity(hours)
         self.progress += (hours * self.speed)
 

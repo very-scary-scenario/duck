@@ -6,7 +6,11 @@ DUCK_IMAGE_DIR = os.path.realpath(os.path.join(
     os.path.dirname(__file__),
     'images',
 ))
-BASE_SPEED = 5
+
+# in km/h:
+BASE_SPEED = 120  # should probably be 5 or something; needs balancing
+
+# image creation stuff:
 BASE_PADDING = 6
 ALIAS_FACTOR = 4
 GOOGLE_LOGO_PAD = 26  # the height of the google logo on street view renders
@@ -14,3 +18,13 @@ ICON_PREFIX = (
     'https://raw.githubusercontent.com/very-scary-scenario/ggj2018/master'
     '/icons/'
 )
+
+# all of these DELAYs are in hours:
+# the smallest possible delay between scenarios
+DELAY_MINIMUM = 1/30
+
+# the difference between the smallest and largest delays between scenarios
+DELAY_VARIANCE = 1/60
+
+# how long to give people to provide an answer
+DELAY_AUTOPLAY = 0.5
