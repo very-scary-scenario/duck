@@ -8,7 +8,6 @@ SCENARIO_DIR = os.path.join(os.path.dirname(__file__), 'scenarios')
 
 class Scenario:
     def __init__(self, filename):
-        print(filename)
         self.prompt = None
         self.answers = []
 
@@ -46,8 +45,6 @@ class Scenario:
                 else:
                     raise RuntimeError('could not parse {!r} from {}'.format(
                         line, filename))
-
-        raise RuntimeError(self.answers)
 
     @classmethod
     def get_random(cls):
