@@ -76,11 +76,15 @@ class Scenario:
         }
 
     @classmethod
-    def get_random(cls, duck):
-        return cls(os.path.join(SCENARIO_DIR, random.choice([
+    def get_random(cls, duck, avoid=None):
+        options = [
             fn for fn in os.listdir(SCENARIO_DIR)
-            if fn.endswith('.txt') and not fn.startswith('.')
-        ])))
+            if (
+                True if avoid is None else
+                (fn != os.path.basename(avoid._filename))
+            ) and fn.endswith('.txt') and not fn.startswith('.')
+        ]
+        return cls(os.path.join(SCENARIO_DIR, random.choice(options)))
 
     def answer_for(self, response):
         for answer in self.answers:

@@ -37,6 +37,7 @@ class Duck:
         self.motivation = 10
         self.experience = 0
         self.scenario = None
+        self.last_scenario = None
         self.success = None
         self.next_active = now()
 
@@ -170,7 +171,9 @@ class Duck:
             yield 'I made it!'
             return
 
-        self.scenario = Scenario.get_random(self)
+        self.last_scenario = self.scenario = Scenario.get_random(
+            self, avoid=self.last_scenario,
+        )
         self.delay_next_activity(DELAY_AUTOPLAY)
 
         yield '{}\n\n{}'.format(self.scenario.prompt, '\n'.join((
@@ -257,6 +260,7 @@ def _dump_duck(duck):
         'motivation': duck.motivation,
         'experience': duck.experience,
         'scenario': duck.scenario,
+        'last_scenario': duck.last_scenario,
         'success': duck.success,
         'next_active': duck.next_active.isoformat(),
     }
