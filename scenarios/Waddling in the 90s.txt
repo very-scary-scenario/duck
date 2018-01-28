@@ -1,0 +1,27 @@
+<Scenario>
+It’s pretty icy out at the moment and I’m coming up to a twisty country lane. Should I charge through, take it slow or try and find a different route?
+
+Charge
+Slow
+Different
+
+<Charge>
+10 I dashed down the country lane, sliding around corners sideways like a sports car. Pretty sure I heard some eurobeak music playing from a house too. I feel awesome. ++Speed +Motivation
+
+40 I managed to slip and slide my way along the road without incident, though I don’t think I saved much time by trying to dash.
+
+50 Well, I knew it would happen. I slipped and fell over a bunch of times as I attempted to dash down the road. -Speed -Motivation
+
+<Slow>
+40 I gradually made my way down the road without falling beak-first and made good time! +Speed
+
+50 I slowly made my way along the road and it was *very* slippy. I think I made the right decision to take it slow.
+
+10 Going slowly didn’t make a difference, I still fell on my beak a few times. I’m not a happy duck. -Motivation
+
+<Different>
+20 Going a different way, I actually found a shortcut! +Distance
+
+40 Alright, going a different way worked out for me. I found a major road that was gritted and safe to walk on that’s basically parallel.
+
+20 Yeah, this is going to take a while. At least I won’t fall over a lot I guess? -Speed

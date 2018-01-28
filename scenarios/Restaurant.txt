@@ -1,25 +1,25 @@
 <Scenario>
-Hey hey hey! I’ve just found [name of restaurant nearby]. What should I do?
+Hey hey hey! I’ve just found a restaurant! What should I do?
 
 Eat
 Steal
 Ignore
 
 <Eat> 
-35 The owner gave me some amazing food for free! I feel energised and ready to power on! +Speed +Exp
+35 The owner gave me some amazing food for free! I feel energised and ready to power on! +Speed +Motivation
 
 50 Had some food. Time to get back on the road.
 
-15 Ughhhhhh I’m not feeling great. I’ll do my best to keep going. -Speed
+15 Ughhhhhh I’m not feeling great. I’ll do my best to keep going. -Speed -Motivation
 
 <Steal>
 20 Ducks don’t have pockets, let alone money! I’ve grabbed some food for the road and legged it. +Speed
 
-50 I went in to try and grab some food, but there was someone there keeping an eye on me, so I bottled out.
+50 I went in to try and grab some food, but there was someone there keeping an eye on me, so I bottled out. -Motivation
 
-30 Eep, I got caught trying to grab some food. Been chased back the way I came. -Distance
+30 Eep, I got caught trying to grab some food. Been chased back the way I came. -Distance -Motivation
 
 <Ignore>
-15 As I started to leave, the restaurant owner threw me some snacks. What a lovely place. +Speed
+15 As I started to leave, the restaurant owner threw me some snacks. What a lovely place. +Speed +Motivation
 
 75 Yeah, I should just press on. So much to do, so much to see.
