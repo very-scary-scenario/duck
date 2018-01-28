@@ -5,8 +5,10 @@ basingstoke/51.2667, -1.0876
 bath/51.38, -2.36
 birmingham/52.483056, -1.893611
 blackpool/53.814167, -3.050278
+bournemouth/50.72, -1.88
 brighton/50.842941, -0.131312
 bristol/51.45, -2.583333
+burnley/53.789, -2.248
 cambridge/52.205, 0.119
 cannock/52.6999408, -2.0218293
 cardiff/51.483333, -3.183333
@@ -28,6 +30,7 @@ glenfield/52.6464805, -1.2023165
 great budworth/53.283, -2.5
 groby/52.6591542, -1.2234660
 haslington/53.100076, -2.395320
+huddersfield/53.645, -1.7798
 hugglescote/52.713628, -1.36752
 ibstock/52.694644, -1.401394
 inverness/57.4718, -4.2254
