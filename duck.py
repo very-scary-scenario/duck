@@ -4,7 +4,7 @@ import random
 
 from camel import Camel
 from dateutil.parser import parse as parse_date
-from django.contrib.gis.geos import LineString
+from django.contrib.gis.geos import LineString, Point
 import PIL
 import PIL.ImageDraw
 import PIL.ImageFont
@@ -18,7 +18,7 @@ from config import (
     DELAY_AUTOPLAY,
 )
 from google import streetview_url, static_map_url
-from route import _length_in_km, random_route
+from route import _length_in_km, random_route, random_route_from
 from scenario import (
     Scenario, EXPERIENCE, SPEED, DISTANCE, MOTIVATION, registry,
 )
@@ -216,6 +216,14 @@ class Duck:
 
     def delay_next_activity(self, hours):
         self.next_active = now() + timedelta(hours=hours)
+
+    def make_successor(self):
+        successor = Duck(random_route_from(
+            Point(*self.get_position(), srid=4326),
+            experience=self.experience,
+        ))
+        successor.experience = self.experience
+        return successor
 
     def advance(self, response=None):
         if self.success is not None:
