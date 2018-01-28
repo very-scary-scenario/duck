@@ -23,7 +23,7 @@ Continue
 
 15 I continue past the park entrance and I can see through the fence that there was no pool. I made the right decision! +Exp
 
-30 I continue past the park entrance and I can see through the fence that there was a pool. Well, I’m not turning back now…
+30 I continue past the park entrance and I can see through the fence that there was a pool. Well, I’m not turning back now… -Motivation
 
 40 Yes, no time to get distracted. I’m gonna continue walking…waddling on.
 
