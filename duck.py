@@ -76,7 +76,11 @@ class Duck:
         Return the last point of Duck's travelled route.
         """
 
+        if self.success is True:
+            return self.route[-1]
+
         travel = self.get_travel()
+
         if travel is None:
             return self.route[0]
         else:

@@ -4,7 +4,8 @@ import os
 from camel import Camel
 import tweepy
 
-from duck import now, registry, _sample_duck
+from duck import Duck, now, registry, _sample_duck
+from route import random_route_from
 from secrets import TWITTER
 
 DUCK_DIR = os.path.join(
@@ -41,7 +42,13 @@ def get_duck():
         if latest_duck.success is None:
             return (latest_duck, latest_duck_filename)
         else:
-            return (_sample_duck(), None)  # start from where we finished
+            # start from where we finished
+            new_duck = Duck(random_route_from(
+                latest_duck.get_position(),
+                experience=latest_duck.experience
+            ))
+            new_duck.experience = latest_duck.experience
+            return (new_duck, None)
     else:
         return (_sample_duck(), None)  # start from scratch
 
