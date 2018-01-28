@@ -8,7 +8,7 @@ DUCK_IMAGE_DIR = os.path.realpath(os.path.join(
 ))
 
 # in km/h:
-BASE_SPEED = 500  # should probably be 5 or something; needs balancing
+BASE_SPEED = 120  # should probably be 5 or something; needs balancing
 
 # image creation stuff:
 BASE_PADDING = 6
