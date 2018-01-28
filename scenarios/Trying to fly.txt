@@ -8,21 +8,21 @@ Walk
 <High> 
 5 I met a friend! Another duck flying through the area gave me some directions to save some time! ++Distance +Motivation
 
-30 The view is lovely up here! I can’t be up here for long, but I made good progress! +Distance
+30 The view is lovely up here! I can’t be up here for long, but I made good progress! +Distance +Exp
 
 50 I flew for a bit, but there’s nothing like walking to see the sights and the people, so back to it.
 
 15 Oh no! There’s a drone in the sky! It chased me back the other way! -Distance -Motivation
 
 <Low>
-15 Children cheered as I flew low through the streets. I feel great and I’ve saved a lot of time! +Distance +Motivation
+15 Children cheered as I flew low through the streets. I feel great and I’ve saved a lot of time! +Distance +Motivation +Exp
 
 35 I flew low, manoeuvring through some traffic, but it seemed kinda dangerous. I should get back to walking.
 
 50 OUCH! I crashed into a car door by flying low. I feel a bit dizzy, so I should really take things slow for a bit. -Speed -Motivation
 
 <Walk>
-40 Yeah, I should definitely walk. It’s the best way to see the world! I should get a move on. +Speed
+40 Yeah, I should definitely walk. It’s the best way to see the world! I should get a move on. +Speed +Exp
 
 30 I guess I should walk. That’s the name of the game anyway.
 
