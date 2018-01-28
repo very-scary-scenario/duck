@@ -63,7 +63,7 @@ def random_point_near(point, experience=None):
             # we don't have the confidence to attempt a journey this long
             break
 
-        if place['distance'] < 1:
+        if place['distance'] < 0.2:
             # this is close enough that it's probably literally the spot we're
             # starting from
             continue

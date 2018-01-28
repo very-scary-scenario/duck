@@ -18,7 +18,7 @@ from config import (
     DELAY_AUTOPLAY,
 )
 from google import streetview_url, static_map_url
-from route import _length_in_km, random_route, random_route_from
+from route import _length_in_km, random_route_from
 from scenario import (
     Scenario, EXPERIENCE, SPEED, DISTANCE, MOTIVATION, registry,
 )
@@ -281,7 +281,10 @@ def _load_duck(data, version):
 
 
 def _sample_duck():
-    return Duck(random_route())
+    return Duck(random_route_from(Point(
+        53.095943, -2.469436,  # a nice spot in the middle of Valley Brook
+        srid=4326,
+    ), experience=0))
 
 
 if __name__ == '__main__':
