@@ -67,7 +67,7 @@ class Duck:
     def progress_summary(self):
         return (
             '{progress:.1f} / {total:.1f} km travelled\n'
-            'Speed: {speed}\n'
+            'Speed: {speed} km/h\n'
             'Motivation: {motivation}\n'
             'Experience: {experience}\n'
             .format(
