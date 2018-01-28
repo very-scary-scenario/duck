@@ -1,0 +1,77 @@
+==Cities
+Aberdeen/57.1526, -2.11
+Bath/51.38, -2.36
+Birmingham/52.483056, -1.893611
+Bristol/51.45, -2.583333
+Cambridge/52.205, 0.119
+Cardiff/51.483333, -3.183333
+Carlisle/54.890833, -2.943889
+Chester/53.1903, -2.8916
+Coventry/52.408056, -1.510556
+Derby/52.922, -1.475833
+Dundee/56.462, -2.9707
+Durham/54.7761, -1.5733
+Edinburgh/55.953056, -3.188889
+Exeter/50.716667, -3.533333
+Glasgow/55.858, -4.259
+Inverness/57.4718, -4.2254
+Lancaster/54.047, -2.801
+Leeds/53.799722, -1.549167
+Leicester/52.633333, -1.133333
+Liverpool/53.4, -2.983333
+London/51.5155, -0.0922
+Manchester/53.466667, -2.233333
+Newcastle/54.966667, -1.6
+Newport/51.583333, -3
+Nottingham/52.953417, -1.150028
+Norwich/52.6, 1.3
+Oxford/51.751944, -1.257778
+Perth/56.397, -3.437
+Peterborough/52.583333, -0.25
+Plymouth/50.371389, -4.142222
+Portsmouth/50.816667, -1.083333
+Preston/53.759, -2.699
+Sheffield/53.383611, -1.466944
+Sunderland/54.91, -1.385
+Swansea/51.616667, -3.95
+Wolverhampton/52.583333, -2.133333
+York/53.958333, -1.080278
+
+==Smaller Places
+Amble/55.3306, -1.5783
+Pegswood/55.1798, -1.6442
+Morpeth/55.163, -1.678
+Ulgham/55.2252, -1.6329
+Crewe/53.099, -2.44
+Nantwich/53.067, -2.522
+Reading/51.454167, -0.973056
+Matlock/53.14, -1.55
+Blackpool/53.814167, -3.050278
+
+==Parks/nature reserves
+Ford Moss/55.6311, -2.0492
+Gibraltar Point/53.09641, 0.32838
+Conway RSPB/53.277, -3.802
+Sandwell Valley RPSB/52.5331, -1.95
+Wolves Wood/52.056, 0.995
+Lodmoor/50.631, -2.442
+Fore Wood/50.888, 0.493
+Barton Hills/51.956, -0.418
+Titchfield Haven/50.8205, -1.24471
+
+==Water
+Kielder/55.183333, -2.5
+Windermere/54.358333, -2.936111
+Haweswater/54.518889, -2.804722
+Llyn Cowlyd/53.133333, -3.916667
+Kenfig Pool/51.5194, -3.7362
+
+==Other Places of Interest
+Northumberlandia/55.088389, -1.628083
+Buckingham Palace/51.500833, -0.141944
+Big Ben/51.5007, -0.1245
+Bamburgh Castle/55.608, -1.709
+Alton Towers/52.9875, -1.890833
+Flamingo Land/54.2097, -0.8082
+Chessington World of Adventures/51.348611, -0.316667
+Blackpool Tower/53.815833, -3.055278
