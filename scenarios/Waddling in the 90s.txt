@@ -6,21 +6,21 @@ Slow
 Different
 
 <Dash>
-20 I dashed down the country lane, sliding around corners sideways like a sports car. Pretty sure I heard some eurobeak music playing from a house too. I feel awesome! +Speed +Motivation
+20 I dashed down the country lane, sliding around corners sideways like a sports car. Pretty sure I heard some eurobeak music playing from a house too. I feel awesome! +Speed +Motivation +Exp
 
 30 I managed to slip and slide my way along the road without incident, though I don’t think I saved much time by trying to dash.
 
 50 Well, I knew it would happen. I slipped and fell over a bunch of times as I attempted to dash down the road. -Speed -Motivation
 
 <Slow>
-40 I gradually made my way down the road without falling over beak-first. I made good time, too! +Speed
+40 I gradually made my way down the road without falling over beak-first. I made good time, too! +Speed +Exp
 
 50 I slowly made my way along the road and it was *very* slippy. I think I made the right decision to take it slow.
 
 10 Going slowly didn’t make a difference, I still fell on my beak a few times. I’m not a happy duck :( -Motivation
 
 <Different>
-25 I decided to go a different way, and I actually found a shortcut! +Distance
+25 I decided to go a different way, and I actually found a shortcut! +Distance +Exp
 
 40 Going a different way worked out for me! I found a major road that was gritted and safe to walk on that’s basically parallel. +Speed
 
