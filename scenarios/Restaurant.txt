@@ -6,7 +6,7 @@ Steal
 Ignore
 
 <Eat> 
-35 The owner let me eat some amazing food for free! I feel energised and ready to power on! +Speed +Motivation
+35 The owner let me eat some amazing food for free! I feel energised and ready to power on! +Exp +Motivation
 
 50 Ate some food. Time to get back on the road.
 
