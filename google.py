@@ -12,7 +12,8 @@ def directions(start, finish):
         'https://maps.googleapis.com/maps/api/directions/json',
         params={
             'origin': start,
-            'mode': 'walking',
+            'mode': 'driving',
+            'avoid': 'highways',
             'destination': finish,
             'key': GOOGLE_API_KEY,
         }
