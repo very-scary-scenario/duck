@@ -61,14 +61,17 @@ class Duck:
                 last_ls = ls
 
     def progress_summary(self):
+        total = self.total_distance()
+
         return (
             '{progress:.1f} / {total:.1f} km travelled\n'
             'Speed: {speed} km/h\n'
             'Motivation: {motivation}\n'
             'Experience: {experience}\n'
             .format(
-                total=self.total_distance(),
-                **self.__dict__
+                **self.__dict__,
+                total=total,
+                progress=min(self.progress, total),
             )
         ).strip()
 
