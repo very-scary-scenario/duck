@@ -1,13 +1,21 @@
 <Scenario>
-Passed by a restaurant and there's a raccoon telling me to follow them to the back. They want help with something.
+Just passed by a restaurant and there's a raccoon telling me to follow them to the back. I think they want help with something? What do you think I should do?
 
 Follow
 Leave
 
 <Follow>
-50 They wanted me to help them get some stuff out of a flooded dumpster. It was just floating in the back, easy. +Exp
+5 I followed the raccoon to the back of the restaurant - turns out they need something out of a flooded dumpster. I found some treasure and they let me keep it, score! +Exp +Motivation
 
-50 They wanted me to help them get some stuff out of a flooded dumpster. Had to dive down it. Gross. -Motivation
+45 I followed the raccoon and it turns out they wanted my help in getting some stuff out of a flooded dumpster. It was just floating in the back, no biggie! +Exp
+
+30 After following the raccoon I found out they needed help in getting something out of a flooded dumpster. It was no problem, but I definitely smell a bit weird now. 
+
+20 I followed the raccoon and it turns out they wanted my help in getting some stuff out of a flooded dumpster. I had to dive down to get it and some of the water got in my mouth. Gross. -Motivation
 
 <Leave>
-100 Sorry, I need to keep going.
+25 I apologised to the raccoon for having to leave, but they wished me well on my adventures. Very nice of them! +Speed
+
+35 No, we can't afford distractions on this epic journey. Sorry raccoon, but I'm sure another travelling duck will come by here soon.
+
+40 I left the raccoon behind, but I can still see their sad face. Am I a bad duck? :( -Speed
