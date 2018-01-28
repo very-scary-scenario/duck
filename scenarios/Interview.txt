@@ -1,0 +1,17 @@
+﻿<Scenario>
+It seems like I've got a bit of a reputation! A local newspaper wants to interview me about my journey, do you think I should? I want to inspire other ducks!
+
+Accept
+Decline
+
+<Accept> 
+45 The interview went well! I got to tell them all about where I hatched, the pond I was raised and why I became a travelling duck. They even drove me in the direction I'm heading! +Distance +Exp
+
+25 I enjoyed the interview, but they had to drive me back to their office for it. Would have liked a lift back to where I was! -Distance
+
+30 I accepted the interview but they only wanted me to talk about ducks with no jobs. I walked out :/ -Motivation -Distance 
+
+<Decline>
+50 They were okay with me declining the interview, but the did take a quick photo for their social accounts. I'll get back to them when I'm not on the road! +Speed +Exp
+
+50 After I declined the interview they lectured me on the importance of their newspaper. Whatever, this duck has places to be! #ThinkPositive -Speed

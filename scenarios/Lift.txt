@@ -1,4 +1,4 @@
-<Scenario>
+﻿<Scenario>
 Twitter, can I ask you a question? There's a human that's offering me a lift and my feet hurt, should I go for it?
 
 Lift
@@ -6,11 +6,11 @@ Decline
 Run
 
 <Lift> 
-30 I got a lift with the human! It turns out they follow me on Twitter, so thank you for the lift! +Speed +Exp
+10 I got a lift with the human! It turns out they follow me on Twitter, so thank you for the lift! +Motivation +Distance +Exp
 
-30 I got in the car with the human but it was an awkward, silent journey. Appreciate it though! +Speed
+40 I got in the car with the human but it was an awkward, silent journey. Appreciate it though! +Distance
 
-40 I was in the car with the human but they were salivating a little too much. I flew out of the window to safety. -Distance 
+50 I was in the car with the human but they were salivating a little too much. I flew out of the window to safety. -Distance 
 
 <Decline>
 50 I turned down the human but we chatted for a little while. Nice person! +Speed +Exp

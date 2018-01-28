@@ -1,0 +1,33 @@
+﻿<Scenario>
+Hmm, I'm kinda tired but I want to make some more progress. Thoughts on me grabbing an energy drink? I hear those are good, and I love electrolytes! 
+
+Energy
+Soda
+Water
+
+<Energy> 
+25 This energy drink makes me feel like I can fly! I'm off! +Speed +Exp
+
+35 I don't think energy drinks are for me. This tastes weird.
+
+40 I thought this was an energy drink but it might have been alcohol? I don't read human and I seem to have wandered in the wrong direction. -Distance
+
+<Soda>
+35 This soda has quenched my thirst and there's a bubbly feeling in my stomach. This might catch on! +Exp
+
+35 The soda didn't taste bad but I can't shake these hiccups. I'm making some odd honking sounds and people keep mistaking me for a tiny goose.
+
+30 I DRANK SODA AND IT FEELS LIKE I'VE SWALLOWED BEES. BEEEEEEEES.
+
+<Water>
+45 Nothing can beat drinking good ol' water. It's like I'm back in my pond days! +Speed +Exp
+
+35 The water has rehydrated me, but I still feel tired. No biggie, I'll walk it off.
+
+20 I want some fresh water but it doesn't seem like there's any around. I drank my fill at a nearby pond but it tasted funky. -Speed
+
+
+
+
+
+

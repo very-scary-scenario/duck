@@ -1,4 +1,4 @@
-<Scenario>
+﻿<Scenario>
 Hey uhh, there's a cinema all the way out here. What should I watch? I might regret not taking the opportunity!
 
 Comedy

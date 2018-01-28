@@ -1,4 +1,4 @@
-<Scenario>
+﻿<Scenario>
 Twitter, help me out. I found some human money on the ground and I don't know what to do with it (I'm a duck). What shall I do?
 
 Quack

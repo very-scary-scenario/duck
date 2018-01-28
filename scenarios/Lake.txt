@@ -1,0 +1,29 @@
+﻿<Scenario>
+Twitter peeps! I need to cross a big lake and I'm not sure what the best way to cross it would be. Yours, a duck in need of advice.
+
+Swim
+Fly
+Raft
+
+<Swim> 
+5 It's been so long since I've had a good paddle that I'd forgotten just how good I am at swimming. I'm a duck-sized jet ski, honestly. Lake conquered! +Motivation +Speed +Exp
+
+25 The water is a bit cold but swimming was definitely the right call here. Good to soak those tail feathers! +Speed +Exp
+
+30 I swam across the lake but the current kept pulling me off to one side. It was slow going but at least I crossed the lake!
+
+40 I've been watching humans so much lately that I forgot we swim differently. Diving into the lake got water in my beak and now I've got this funny taste in my mouth. Not recommended. -Speed
+
+<Fly>
+25 I don't like to fly on my journeys, but I'll do it when the need arises. That and I fly so majestically that all the local ducks get jealous. +Speed +Exp
+
+30 My flying is a bit rusty so it took me longer to construct a runway, but I got to the other side in the end. -Speed
+
+45 I took a run up and everything but apparently I forgot how to fly. I swam across the second half of the lake. --Speed
+
+<Raft>
+20 Keeping the spirit of adventure alive, I constructed a small raft out of twigs, leaves and string to cross the lake. People will write stories about me. +Speed +Exp
+
+40 My raft-making skills have been better, but fortunately it only started to break apart when I was pretty close to the other side.
+
+40 I made a sweet raft with a cabin and a lower deck and everything, but I hit an iceberg in the middle of the lake and now I'm very wet. -Speed 

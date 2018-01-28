@@ -1,4 +1,4 @@
-<Scenario>
+﻿<Scenario>
 Gosh, it's so hot out here. There's a nice tree I could sit under, but I'm not sure if I should stop or not. What do you think?
 
 Shade

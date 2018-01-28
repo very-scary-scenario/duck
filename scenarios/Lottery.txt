@@ -1,0 +1,25 @@
+﻿<Scenario>
+Twitter, I need some advice. There's a human here who says they have the craziest lottery around, and I have enough duck money to play. Should I go for it?
+
+Play
+Leave
+
+<Play> 
+5 I won some running shoes, for ducks! They weren't very well made so I might have kinda ruined the soles, but I made some good progress. +++Speed +Exp
+
+5 I won some running shoes... for humans. I gave them to a nearby human, who seemed a little bemused about the gift. Ah well!
+
+5 I won a free taxi trip! That'll get me further today, so that's great news! +Distance +Exp
+
+5 I won advice! In exchange for my duck money, the lottery human gave me some "good vibes". Feeling good! +Speed +Exp
+
+5 I won some shopping vouchers! I don't have the ability to grip them though, so I'll be leaving them for someone else. Good luck, I think? +Exp
+
+5 I tried to spin the tombola wheel but I can't reach, on account of me being a duck. The lottery human tried to help but I was so embrassed :( -Motivation
+
+70 I didn't win anything. Ah well, maybe next time. -Speed
+
+<Leave>
+85 The lottery human understood and wished me good luck on my travels. Very nice of them! 
+
+15 The lottery human didn't mind that I wasn't playing, but I knocked over the machine as I left and spent an hour chasing tiny balls around. #Fail -Speed

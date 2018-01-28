@@ -1,0 +1,29 @@
+﻿<Scenario>
+My feet hurt, Twitter. This long journey is hard on the ol' webbers. I've earned a short rest, right?
+
+Rest
+Stretch
+Sprint
+
+<Rest> 
+5 I looked for a good spot to have a rest and found a pond to dip my feet into. These are the moments I look forward to on my journies! +Motivation +Speed +Exp
+
+25 I had a quick rest on a nice grassy hill, admiring my surroundings. Just what I needed! +Speed +Exp
+
+30 I found a nice patch of grass to sit down and rest on but it was wet. My bottom is soggy :(  
+
+40 The second I rested my feet I fell asleep. What time is it? And where am I? -Speed
+
+<Stretch>
+25 There were some worrying clicking sounds, but after a little stretching my feet are ready to go again. In fact, I feel much better than expected! +Speed +Exp
+
+30 I was stretching my sore feet and decided I might as well stretch my whole body, limber up a bit. Now these kids think I was trying to dab, but I didn't. I didn't dab.
+
+45 Ow ow ow owwww. I stretched my sore feet, fell over and bashed my beak. I don't even know how I managed that... #StuntDuck -Speed
+
+<Sprint>
+20 I sprinted, faster than a duck has ever sprinted before. My feet can't get sore if I'm moving so quickly that I'm barely keeping weight on them! +Speed +Exp
+
+40 I started to sprint away but I quickly realised that yes, my feet are still sore. I'll just take it slowly for a bit. -Speed
+
+40 Well I was planning to sprint further than a couple of yards, but I think I'm getting a blister. I should buy some duck socks. --Speed 

@@ -1,0 +1,17 @@
+﻿<Scenario>
+Uh oh, the rain is pouring down over here and I think it's going to start thundering. I can't handle that! What do I do?
+
+Run
+Hide
+
+<Run> 
+30 Bet you've never seen a duck that was faster than lightning! But I am! I'm so fast it'll never catch me! +Speed +Exp
+
+70 I ran away from the lightning, but the rain was in my eyes and I might have gone the wrong way... -Distance
+
+<Hide>
+35 Take that, storm! I found a good hiding spot and even managed to charge my phone up a little. Bonus! +Exp
+
+45 I found a very good hiding spot, perfect for hiding from the storm. I fell asleep though, so I'm a bit behind schedule. At least I'm dry! -Speed
+
+20 I successfully hid from the thunder. However, I'm a duck and didn't know that large metal towers make bad shelter. Slightly singed :( -Motivation -Speed

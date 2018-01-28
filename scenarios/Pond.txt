@@ -1,30 +1,30 @@
-<Scenario>
-Hey Twitter! I’ve just come across a pond - all the way out here! Do you think it’d be okay for me to relax for a bit?
+ï»¿<Scenario>
+Hey Twitter! Iâ€™ve just come across a pond - all the way out here! Do you think itâ€™d be okay for me to relax for a bit?
 
 Relax
 Drink
 Leave
 
 <Relax> 
-25 Ahh, relaxing was a great idea! I’ve had a chance to stretch my wings and my feet don’t ache any more. I think I can move quicker now. +Speed +Exp
+25 Ahh, relaxing was a great idea! Iâ€™ve had a chance to stretch my wings and my feet donâ€™t ache any more. I think I can move quicker now! +Speed +Exp
 
-30 Well, I tried to relax but I’m just itching to get going again. Back on the road for me!
+30 Well, I tried to relax but Iâ€™m just itching to get going again. Back on the road for me!
 
-45 I tried to relax but the water was cold and there’s a weird guy nearby. I’m outta here! 
+45 I tried to relax but the water was cold and thereâ€™s a weird guy nearby. Iâ€™m outta here. -Speed
 
 <Drink>
-40 Ahh, that was some refreshing water. Can’t wait to get back on the road! +Speed +Exp
+40 Ahh, that was some refreshing water. Canâ€™t wait to get back on the road! +Speed +Exp
 
-35 Well, I’ve tasted better. Ah well, good to top up the tank while I can.
+35 Well, Iâ€™ve tasted better. Ah well, good to top up the tank while I can.
 
-25 This water tastes gross. I’d file a complaint but I need to get going… 
+25 This water tastes gross. Iâ€™d file a complaint but I need to get goingâ€¦ 
 
 <Leave>
-15 No distractions! Time to get back on the road. +Speed +Exp
+15 No time for distractions like thirst! Let's get back on the road. +Speed +Exp
 
 50 I kinda wanted to look at that pond but I guess I should get a move on. Next time!
 
-35 I left the pond behind but I’m so thirsty. Regrets. 
+35 I left the pond behind but Iâ€™m so thirsty. Regrets. -Motivation
 
 
 

@@ -1,4 +1,4 @@
-<Scenario>
+﻿<Scenario>
 So there's this person asking me for something called a 'passport', but I don't know what one of those is. Like, are they trying to sell me something? What should I do?
 
 Quack
