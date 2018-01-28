@@ -1,4 +1,3 @@
-import chardet
 import os
 import random
 
@@ -30,7 +29,7 @@ class Scenario:
 
         with open(filename, 'r') as f:
             lines = (
-                l.strip()
+                l.strip().strip('\ufeff')
                 for l in f.readlines() if l.strip()
             )
 
