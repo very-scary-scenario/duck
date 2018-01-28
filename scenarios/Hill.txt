@@ -1,0 +1,29 @@
+﻿<Scenario>
+So there was this hill in the distance not too long ago and it seemed pretty small. Now that I'm climbing it, I've come to realise that my being a small duck is somewhat unsuitable for climbing it. What do you think I should do?
+
+Climb
+Turn back
+Slide
+
+<Climb> 
+30 I felt new muscles developing as I continued my climb, but I reached the top. Can't wait to test these feet out in the pond later, I bet I can outspeed some fish! +Speed +Exp
+
+45 I continued my climb, but quickly realised that the route I was using wouldn't get me to the top. I got to the top eventually but, now my feet hurt. -Speed
+
+25 I got a little overconfident in my climb up the hill and I ended up falling into a bog. Having to roll out of that was very embarrassing :( -Motivation -Speed
+
+<Turn back>
+40 I decided to cut my losses and turn back, but in doing so I found another route around the hill. Lucky! +Speed +Exp
+
+30 Turning back seemed like the right call - I was never going to get up that hill with my adorable, stubby legs. It took a while, but I managed to walk around it. 
+
+20 I turned back so quickly that I hurt one of my feet :( I'm sure I'll walk it off, but it made for a miserable descent. -Speed
+
+<Slide>
+5 Sliding down the hill seemed counterproductive at the time, but I gained so much momentum that it made the journey around the hill a simple one. Feeling good! +Motivation +Speed
+
+35 Sliding down the hill was certainly quicker than retracing my steps. I still have to walk around the hill, but at least I didn't waste any more time up here! -Distance +Speed
+
+55 I figured that sliding down the hill would be the quicker option, but I'm just not slippery enough to pull it off. I left my duck grease at home :( -Distance
+
+5 Well I tried to slide down the hill, but I'm pretty sure what I just did was roll and bounce down it... -Motivation -Distance
