@@ -6,7 +6,7 @@ Stretch
 Sprint
 
 <Rest> 
-5 I looked for a good spot to have a rest and found a pond to dip my feet into. These are the moments I look forward to on my journies! +Motivation +Speed +Exp
+5 I looked for a good spot to have a rest and found a pond to dip my feet into. These are the moments I look forward to on my journeys! +Motivation +Speed +Exp
 
 25 I had a quick rest on a nice grassy hill, admiring my surroundings. Just what I needed! +Speed +Exp
 

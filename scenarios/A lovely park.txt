@@ -1,23 +1,23 @@
 <Scenario>
-Oooh! A lovely park~ I think they might have a pond! Alternatively, should I take a detour through the park? It might be a shortcut.
+Oooh! A lovely park~ I think they might have a pond! Alternatively, I could take a detour through the park. It might be a shortcut!
 
 Detour
 Pond
 Continue
 
 <Detour> 
-35 It WAS a shortcut! I’ve saved some time on my journey. +Distance
+35 The detour WAS a shortcut! I’ve saved some time on my journey. +Distance
 
-40 I don’t think there was much different with that detour.
+40 I don’t think there was much time saved with that detour.
 
-25 I think I’m lost… -Distance
+25 I took the detour but I think I’m lost… -Distance
 
 <Pond>
 20 Heck yeah! There’s a great pond here. I’ve had a good chillax, I feel great and I’m ready to get going. +Speed +Exp
 
 50 There’s a nice pond here. I spent some time there and rejoined the road at the park entrance.
 
-30 Hmmm…I can’t find a pond and I’m not sure where I am either…this may take a while -Speed
+30 Hmmm… I can’t find a pond and I’m not sure where I am either. This may take a while. -Speed
 
 <Continue>
 
@@ -25,6 +25,6 @@ Continue
 
 30 I continue past the park entrance and I can see through the fence that there was a pool. Well, I’m not turning back now… -Motivation
 
-40 Yes, no time to get distracted. I’m gonna continue walking…waddling on.
+40 Yes, this is no time to get distracted. I’m gonna continue walking… waddling on.
 
-15 I’m just gonna walk past the park entrance. I can’t help think I should’ve tried to look around it more… -Speed
+15 I’m just gonna continue past the park entrance. I can’t help thinking that I should’ve tried to look around it more… -Speed

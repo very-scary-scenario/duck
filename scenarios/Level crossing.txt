@@ -1,23 +1,23 @@
 <Scenario>
-There’s warning sirens for a level crossing and I can see a freight train approaching. Should I catch a lift like I see in the movies?
+I can hear warning sirens for a level crossing and there's a freight train approaching. Should I catch a lift, like they do in the movies?
 
 Yes
 No
 
 <Yes> 
-5 The freight train was going slow enough for me to jump onto a carriage with an open side door and ride it. I had a nap and made good progress too! +Speed +Distance +Motivation
+5 The freight train was going slow enough for me to jump onto a carriage with an open side door. I had a nap and made good progress too! +Speed +Distance +Motivation
 
 20 All of the carriages were locked shut, but I managed to perch on a coupler between carriages. It’s not comfortable, but it gets me some extra progress. +Distance
 
-25 The freight train was going way too fast to get near and before I even got a chance to try and jump on, it was gone. -Motivation
+25 Whoops, it was a passenger train, so there was nowhere I can jump on to, and there’s no station nearby.
 
-25 Whoops, it was a passenger train, so there was nowhere really to jump on to, and there’s no station nearby. -Motivation
+25 The freight train was going way too fast to get near and before I even got a chance to try and jump on, it was gone. -Speed
 
-25 Attempting to jump onto a passing freight train seemed simple in the movies, but I just bounced off and hit my head, ouch >_< -Speed -Motivation
+25 Attempting to jump onto a passing freight train seemed simple in the movies, but I just bounced off and hit my head. Ouch >_< -Speed -Motivation
 
 <No>
-40 As I waited for the train to pass, I realised it’s a passenger train and there was a tiny station there! I caught a lift on the train and made some good progress! +Distance
+40 As I waited for the train to pass, I realised it’s a passenger train and there was a tiny station nearby! I caught a lift on the train and made some good progress! +Distance
 
-50 I watched the freight train go past, it’s far too quick for me to jump onto anyway, so I made the right decision.
+50 I decided not to and watched the freight train go past. It’s far too quick for me to jump onto anyway, so I made the right decision.
 
-10 The freight train slowed down a lot for the level crossing (I guess it’s a safety thing) so I guess I might have been alright. Never mind… -Motivation
+10 I decided not to, but the freight train slowed down a lot for the level crossing (I guess it’s a safety thing) so I guess I might have been alright. Never mind… -Motivation

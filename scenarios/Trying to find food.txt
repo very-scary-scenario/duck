@@ -8,16 +8,16 @@ Continue
 <Search> 
 40 I took a side road and quickly found a small ramen restaurant. I love ramen! The owner gave me some food and I continued on my way losing very little time. +Speed
 
-40 I walked for a while and, although I didn’t find any restaurant, it turned out to be a shortcut! I saved some time! +Distance
+40 I walked for a while and, although I didn’t find any restaurants, it turned out to be a shortcut! I saved some time! +Distance
 
-20 Hmmm…not really found anywhere to eat around here, and I think I’m a bit lost too… -Distance -Motivation
+20 Hmmm… there doesn't seem to be anywhere to eat around here, and I think I’m a bit lost too… -Distance -Motivation
 
 <Takeaway>
 15 By imitating a dial-up modem, I used a payphone to order a takeaway. It got here quickly and the driver let me have it for free cos I’m cute (probably). +Speed
 
-35 I managed to make a phone call, but struggled to explain myself using nothing but quacks. Never mind. -Motivation
+55 I managed to make a phone call, but struggled to explain my order using nothing but quacks. Never mind. -Speed
 
-50 I spent a while trying to order food, but I’m a duck. I can’t work the telephone. I’m gonna give up and carry on. -Speed -Motivation
+30 I spent a while trying to order food, but I’m a duck. I can’t work the telephone. I’m gonna give up and carry on. -Speed -Motivation
 
 <Continue>
 

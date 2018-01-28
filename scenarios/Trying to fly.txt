@@ -6,7 +6,7 @@ Low
 Walk
 
 <High> 
-5 I met a friend! Another duck flying through the area gave me some directions to save some time! +++Distance +Motivation
+5 I met a friend! Another duck flying through the area gave me some directions to save some time! ++Distance +Motivation
 
 30 The view is lovely up here! I can’t be up here for long, but I made good progress! +Distance
 
@@ -15,17 +15,17 @@ Walk
 15 Oh no! There’s a drone in the sky! It chased me back the other way! -Distance -Motivation
 
 <Low>
-15 Children cheered as I pass through the streets. I feel great and I’ve saved a lot of time! +Distance +Motivation
+15 Children cheered as I flew low through the streets. I feel great and I’ve saved a lot of time! +Distance +Motivation
 
-35 I manoeuvred through some traffic, but it seemed kinda dangerous. I should get back to walking.
+35 I flew low, manoeuvring through some traffic, but it seemed kinda dangerous. I should get back to walking.
 
-50 OUCH! I crashed into a car door. I feel a bit dizzy, time to take things slow for a bit. -Speed -Motivation
+50 OUCH! I crashed into a car door by flying low. I feel a bit dizzy, so I should really take things slow for a bit. -Speed -Motivation
 
 <Walk>
-25 You make a good point. I should definitely walk. It’s the best way to see the world! I should get a move on! +Speed
+40 Yeah, I should definitely walk. It’s the best way to see the world! I should get a move on. +Speed
 
-25 I guess I should walk. That’s the name of the game anyway.
+30 I guess I should walk. That’s the name of the game anyway.
 
-25 Yeah, who ever heard of ducks flying. What a daft idea…probably…hmmm… -Speed -Motivation
+25 Yeah, who ever heard of ducks flying. What a daft idea. Probably. Hmmm… -Speed -Motivation
 
-25 Oh…there’s a brick wall here…I’m gonna have to turn back. If only I flew… -Distance -Motivation
+5 Oh, there’s a brick wall here. I’m gonna have to turn back. If only I flew… -Distance -Motivation

@@ -14,6 +14,6 @@ Leave
 <Leave>
 40 I decided that I shouldn't bother the locals, but in doing so met a kind human who told me about a shortcut. Score! +Distance +Exp
 
-30 Leaving the locals and their bread along is the right decision I know, but I'm going to be thinking about food for a while...
+30 Leaving the locals and their bread alone is the right decision I know, but I'm going to be thinking about food for a while...
 
 20 I decided that I shouldn't pester the locals, but half an hour later when the bread had been dished out, I realised I'd been staring at them the whole time. Awkward. -Speed

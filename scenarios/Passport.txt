@@ -15,7 +15,7 @@ Escape
 <Flap>
 15 My strong flaps kick up some dust, distracting the human enough to allow me to escape. I'm one smart duck! +Speed +Exp
 
-45 While my flapping was inaffective, it did distract the human enough to change the subject. It must be my impressive wingspan.
+45 While my flapping was ineffective, it did distract the human enough to change the subject. It must be my impressive wingspan.
 
 40 My flapping did indeed get me away from the human, but it seems I'm a little rusty at this flying thing and I shot off in the wrong direction. Oops! #JustDuckProblems -Distance
 
