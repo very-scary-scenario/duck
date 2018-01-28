@@ -1,20 +1,21 @@
 <Scenario>
-There's a bus stop here. Should I wait for the bus?
+I've just found a bus stop all the way out here. It might be cheating, but do you think  I should wait for the bus?
 
 Wait
 Continue
 
 <Wait>
-10 I should have read the timetable, it's not coming today. -Motivation
+75 Guess who is on a bus! 🚌 +Speed
 
-10 They don't sell tickets onboard anymore. -Motivation
+10 Well folks, I should have read the timetable. There are no buses coming today. -Motivation -Speed
 
-05 They don't take duck money. -Motivation
+10 Nobody told me that they don't sell tickets onboard anymore! The bus driver yelled at me :( -Motivation
 
-75 🚌 +Speed
-
+5 Personally I think it's outrageous that they don't take duck money. -Motivation
 
 <Continue>
-10 As I walk the bus drives past me. My feet are sore, maybe I should have waited for it? -Motivation
+10 No, let's continue the journey. If I put my mind to it, even I can be faster than a bus! Yeah! +Motivation
 
-90 Pressing onwards.
+70 This duck doesn't need a bus! Let's get back to walking. 
+
+20 As I continue walking, the bus drives passes by me. My tiny feet are sore, maybe I should have waited for it? -Motivation
