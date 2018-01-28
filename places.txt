@@ -1,8 +1,11 @@
 ==town names
 aberdeen/57.1526, -2.11
+aberystwyth/52.414, -4.081
 amble/55.3306, -1.5783
+bangor/53.228, -4.128
 basingstoke/51.2667, -1.0876
 bath/51.38, -2.36
+bideford/51.016, -4.209
 birmingham/52.483056, -1.893611
 blackpool/53.814167, -3.050278
 bournemouth/50.72, -1.88
@@ -13,12 +16,15 @@ cambridge/52.205, 0.119
 cannock/52.6999408, -2.0218293
 cardiff/51.483333, -3.183333
 carlisle/54.890833, -2.943889
+chelmsford/51.7361, 0.4798
 chester/53.1903, -2.8916
 coalville/52.724569, -1.3677109
 coventry/52.408056, -1.510556
 cramond/55.975209, -3.299633
 crewe/53.100404, -2.4438208
 derby/52.922, -1.475833
+dover/51.1295, 1.3089
+dumfries/55.07, -3.603
 dundee/56.462, -2.9707
 durham/54.7761, -1.5733
 edinburgh/55.953251, -3.188266
@@ -28,10 +34,14 @@ glasgow/55.864237, -4.251805
 glen parva/52.5873308, -1.1612856
 glenfield/52.6464805, -1.2023165
 great budworth/53.283, -2.5
+grimsby/53.5595, -0.068
 groby/52.6591542, -1.2234660
 haslington/53.100076, -2.395320
+hereford/52.0565, -2.716
+holyhead/53.309, -4.633
 huddersfield/53.645, -1.7798
 hugglescote/52.713628, -1.36752
+hull/53.744333, -0.3325
 ibstock/52.694644, -1.401394
 inverness/57.4718, -4.2254
 kingston-upon-thames/51.41232, -0.300689
@@ -42,11 +52,13 @@ leicester/52.633333, -1.133333
 liverpool/53.4, -2.983333
 london/51.5073508, -0.1277582
 manchester/53.466667, -2.233333
+margate/51.385, 1.3838
 market drayton/52.903551, -2.483484
 markfield/52.689224, -1.277133
 matlock/53.14, -1.55
 middlesbrough/54.5767, -1.2355
 milford/53.002443, -1.480600
+milton keynes/52.04, -0.76
 morpeth/55.163, -1.678
 musselburgh/55.941941, -3.053918
 nantwich/53.067184, -2.524101
@@ -60,6 +72,7 @@ oban/56.412, -5.472
 oxford/51.751944, -1.257778
 pegswood/55.1798, -1.6442
 penkridge/52.725155, -2.116371
+penzance/50.119, -5.537
 perth/56.397, -3.437
 peterborough/52.583333, -0.25
 plymouth/50.371389, -4.142222
@@ -78,7 +91,10 @@ swansea/51.616667, -3.95
 tamworth/52.633583, -1.691031
 thurmaston/52.6719771, -1.0911742
 thurnby/52.62888, -1.0455286
+thurso/58.596, -3.521
+torquay/50.47, -3.53
 ulgham/55.2252, -1.6329
+ullapool/57.9, -5.166
 uttoxeter/52.898115, -1.865801
 walsall/52.586213, -1.982919
 whitchurch/52.968716, -2.682045
@@ -86,6 +102,7 @@ wigston/52.5863178, -1.1063538
 willaston/53.292611, -3.00752
 wistaston/53.0872628, -2.4825064
 wolverhampton/52.583333, -2.133333
+yeovil/50.9452, -2.637
 york/53.958333, -1.080278
 
 ==parks/nature reserves
