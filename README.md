@@ -1,7 +1,8 @@
 # Duck
 
 A game about a duck that goes on an adventure. Play on Twitter by interacting
-with [@duck_trails][tw].
+with [@duck_trails][tw]. You can only contribute when the most recent tweet
+ends with a list of options.
 
 [tw]: https://twitter.com/duck_trails
 
