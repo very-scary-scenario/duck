@@ -296,8 +296,8 @@ if __name__ == '__main__':
         duck = _sample_duck()
 
     if duck.success is not None:
-        print('your saved duck is no longer journeying; starting a new one...')
-        duck = _sample_duck()
+        print('your saved journey ended, starting a new one...')
+        duck = Duck.make_successor()
 
     response = ' '.join(argv[1:]) or None
 
