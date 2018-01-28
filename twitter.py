@@ -98,6 +98,11 @@ if __name__ == '__main__':
     else:
         response = None
 
+    image = None
+    if filename is None:
+        # this is a fresh duck! we want an image of it at the start point
+        image = duck.make_image()
+
     advancement = duck.advance(response)
 
     if advancement is not None:
@@ -105,7 +110,7 @@ if __name__ == '__main__':
             if (
                 duck.scenario is None and
                 duck.success is None and
-                filename  # filename is None if this is a fresh duck
+                image is None
             ):
                 twitter.update_status(
                     string,
@@ -113,7 +118,9 @@ if __name__ == '__main__':
                     if latest_tweet else None
                 )
             else:
-                image = duck.make_image()
+                if image is None:
+                    image = duck.make_image()
+
                 image.save(DUCK_IMAGE_LOCATION)
                 twitter.update_with_media(DUCK_IMAGE_LOCATION, string)
 
