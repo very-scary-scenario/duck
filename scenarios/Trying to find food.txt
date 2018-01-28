@@ -13,7 +13,7 @@ Continue
 20 Hmmm…not really found anywhere to eat around here, and I think I’m a bit lost too… -Speed -Distance
 
 <Takeaway>
-15 By imitating a dial-up modem, I used a payphone to order a takeaway. It got here quickly and the driver let me have it for free to be  +Speed +Exp
+15 By imitating a dial-up modem, I used a payphone to order a takeaway. It got here quickly and the driver let me have it for free! +Speed +Exp
 
 35 I managed to make a phone call, but struggled to explain myself using nothing but quacks. Never mind.
 
