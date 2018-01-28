@@ -28,11 +28,9 @@ class Scenario:
         self.prompt = None
         self.answers = []
 
-        with open(filename, 'rb') as f:
-            encoding = chardet.detect(f.read())
-            f.seek(0)
+        with open(filename, 'r') as f:
             lines = (
-                l.decode(encoding['encoding']).strip()
+                l.strip()
                 for l in f.readlines() if l.strip()
             )
 
@@ -120,8 +118,20 @@ def _load_scenario(data, version):
 
 
 if __name__ == '__main__':
-    print([
-        Scenario(os.path.join(SCENARIO_DIR, fn))
-        for fn in os.listdir(SCENARIO_DIR)
-        if fn.endswith('.txt') and not fn.startswith('.')
-    ])
+    print('\n\n\n'.join([
+        '{}\n{}'.format(
+            scenario.prompt,
+            '\n'.join(['\n  <{}>\n{}'.format(
+                answer['answer'],
+                '\n'.join([
+                    '  - {}'.format(outcome['flavour'])
+                    for outcome in answer['outcomes']
+                ]),
+            ) for answer in scenario.answers])
+        )
+        for scenario in [
+            Scenario(os.path.join(SCENARIO_DIR, fn))
+            for fn in os.listdir(SCENARIO_DIR)
+            if fn.endswith('.txt') and not fn.startswith('.')
+        ]
+    ]))
