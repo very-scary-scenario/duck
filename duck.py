@@ -68,11 +68,11 @@ class Duck:
             'Speed: {speed} km/h\n'
             'Motivation: {motivation}\n'
             'Experience: {experience}\n'
-            .format(
+            .format(**{
                 **self.__dict__,
-                total=total,
-                progress=min(self.progress, total),
-            )
+                'total': total,
+                'progres': min(self.progress, total),
+            })
         ).strip()
 
     def get_position(self):
