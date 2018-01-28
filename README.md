@@ -20,7 +20,7 @@ Python locally, though, here is how to play on the command line:
 - Make a Python 3.5 or 3.6 virtualenv
 - `pip install -r requirements.txt`
 - make a file called `secrets.py` containing `GOOGLE_API_KEY = '[your api
-  key]', where `[your api key]` is a Google API key with access to the Google
+  key]'`, where `[your api key]` is a Google API key with access to the Google
   Static Maps API, the Google Stret View Image API, and the Google Maps
   Directions API.
 - run `python duck.py`
