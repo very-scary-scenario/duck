@@ -6,16 +6,16 @@ ends with a list of options.
 
 [tw]: https://twitter.com/duck_trails
 
-Made by members of [Very Scary Scenario][vss] for [Global Game Jam 2018][ggj18]
+Made by members of [Very Scary Scenario][vss] for [Global Game Jam 2018][ggj18].
 
 [vss]: https://vscary.co
 [ggj18]: https://globalgamejam.org/2018/games/duck
 
 ## I want to play locally
 
-It's more sporting to play with others on the canonical verion, but you can if
-you like. If you're running macOS or Linux and are comfortable with developing
-Python locally, though, here is how to play on the command line:
+It's more sporting to play with others on the canonical verion, but you can
+play locally if you like. If you're running macOS or Linux and are comfortable
+with developing Python locally, though, here is how to play on the command line:
 
 - Clone and `cd` to this repository
 - Make a Python 3.5 or 3.6 virtualenv
