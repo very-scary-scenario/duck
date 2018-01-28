@@ -1,5 +1,5 @@
 <Scenario>
-I've just found a bus stop all the way out here. It might be cheating, but do you think  I should wait for the bus?
+I've just found a bus stop all the way out here. It might be cheating, but do you think I should wait for the bus?
 
 Wait
 Continue

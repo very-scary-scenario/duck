@@ -22,6 +22,6 @@ Request
 <Request>
 30 The human was happy to play my request! I haven't waddled this much in a long time! +Exp
 
-25 The human was okay with playing a request but he doesn't know much duck music. Ah well.
+25 The human was okay with playing a request but they doesn't know much duck music. Ah well.
 
 45 I tried to ask the human to play a request but they couldn't hear me over the music. I quacked my loudest, too. -Speed
