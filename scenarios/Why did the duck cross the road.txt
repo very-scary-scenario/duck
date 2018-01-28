@@ -1,31 +1,31 @@
 <Scenario>
-Oh gosh. It’s a busy road, and there’s no crossing point. Twitter, what should I do? I need to get to the other side. Should I follow the road to search for a crossing point, attempt to cross here or turn back?
+Oh gosh. It’s a busy road, and there’s no crossing point either. Twitter, what should I do? I need to get to the other side. Should I search for a place to cross, attempt to cross here or just turn back?
 
 Search
 Cross
 Turn back
 
 <Search> 
-20 I started walking along the road and I found a little tunnel underneath the road! I didn’t need to take a detour!
+20 I started walking along the road and I found a little tunnel underneath the road! I didn’t need to take a detour! +Exp +Speed
 
 60 I walked for a while and found a crossing. Nothing gained, nothing lost, but at least I don’t need to take a big detour.
 
-20 I followed the road for a while and eventually found a crossing point, but it meant a bit of a detour. -Distance
+20 I followed the road for a while and eventually found a crossing point, but it was quite a long detour. -Distance
 
 <Cross>
-5 I dived between cars like an action movie hero or an 80’s video game frog! I got across the road quickly and without incident, and I feel great for the journey ahead! +++Speed +Motivation
+5 I dived between cars like an action movie hero or an 80’s video game frog! I got across the road quickly and without incident, and I feel great for the journey ahead! +Speed +Motivation
 
-10 I was about to start crossing between cars when I remembered I can fly short distances. I flew over the road and wondered why I didn’t think of this before. +Distance
+10 I was about to start crossing between cars when I remembered I can fly short distances. I flew over the road while wondering why I didn’t think of this before! +Speed
 
-10 I was about to cross the road, when a bus stopped and offered to pick me up! I handed over some duck money and, after the driver checked the exchange rate online, let me on! +Distance
+10 I was about to cross the road when a bus stopped and offered to pick me up! I handed over some duck money and, after the driver checked the exchange rate online, let me on! +Distance
 
-10 Why did the duck cross the road? To get to the other side, obviously. I charged across the road like a duck on a mission. These cars mean nothing to me! I am INVINCIBLE!
+10 Why did the duck cross the road? To get to the other side, obviously. I charged across the road like a duck on a mission. These cars mean nothing to me! I am INVINCIBLE! +Motivation
 
-10 I began to cross the road when a sports car zoomed past faster than the speed limit, immediately followed by police cars. The draught left by the high speed cars blew me back down the path. -Distance -Motivation
+25 I began to cross the road when a sports car zoomed past faster than the speed limit, immediately followed by police cars. The draught left by the high speed cars blew me back down the path. -Distance -Motivation
 
-10 I crossed the first carriageway of the road without issue, but the other side was busier. I slowly made my way across, dodging cars and trucks. I eventually made it to the other side, but it slowed me down a lot. -Speed
+40 I crossed the first carriageway of the road without issue, but the other side was busier. I slowly made my way across, dodging cars and trucks. I eventually made it to the other side, but it slowed me down a lot. -Speed
 
 <Turn Back>
-20 I turned around to begin to head back and some kids picked me up, jumped and threw me over the road. With the wind under my wings, I glided safely to the other side of the road. Not sure if that was the kids’ intention, but success! +Motivation
+20 I turned around to begin heading back and some kids picked me up and threw me over the road. With the wind under my wings, I glided safely to the other side of the road. Not sure if that was the kids’ intention, but success! +Speed
 
-80 Yeah, I should turn back, you’re right. This is too dangerous. I’ll find another way around. -Distance -Motivation
+80 Yeah, I should turn back, you’re right. This is too dangerous. I’ll find another way around. -Distance
