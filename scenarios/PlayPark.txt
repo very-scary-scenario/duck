@@ -1,0 +1,27 @@
+﻿<Scenario>
+I know that I'm on a journey, but there's a really exciting looking kids park nearby and I want to play for a bit. I don't know what to use first though...
+
+Slide
+Swing
+See-saw
+
+<Slide> 
+30 It's been a while since I've used a slide and I forgot just how aerodynamic I am. I rocketted off the end and I'm back on the road at high speed! +Speed +Exp
+
+25 I had a fun time playing on the slide. I just wish it was a water slide as the friction made some of my feathers curl.  
+
+45 Well, the slide was fun but I went so fast that I crashed into a nearby tree :( I think my beak is a little crooked. -Speed
+
+<Swing>
+40 I had so much fun on the swing that I decided to launch myself towards my next destination. You should have seen me glide. It was beautiful, honestly. +Distance +Exp
+
+20 I had a good time playing on the swings, but I'm back on the road now. Didn't want to get carried away!
+
+40 I had so much fun on the swing that I decided to launch myself towards my next destination. I'm not good at directions. -Distance
+
+<See-saw>
+15 I was sat on the see-saw when a young human pushed down on the other end, launching me into the air. Being a duck, I used this to my advantage and glided towards my next destination. It was quite fun! +Distance +Speed
+
+70 I was sat on the see-saw when a young human pushed down on the other end, launching me into the air. Being a duck who is bad at directions, I used this to my advantage and glided the complete wrong way. Whoops. -Distance
+
+15 I sat on the see-saw for about 15 minutes before giving up on someone coming to the park. Maybe next time... -Motivation

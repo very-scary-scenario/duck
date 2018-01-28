@@ -1,0 +1,19 @@
+﻿<Scenario>
+So there's a pond nearby with some local ducks in it, and they're being fed by some bread-wealthy humans. Do you think it's okay for me to join in?
+
+Join
+Leave
+
+<Join> 
+30 The local ducks were happy to have me join them! The bread was terrific too, definitely a fancy family wanting to impress their kids. Delicious. +Speed +Exp
+
+45 The local ducks didn't seem too pleased that I joined in and was taking most of the bread, but I just wanted to show off my advanced bread-grabbing techniques. 
+
+25 The local ducks didn't want me eating their bread, and then some tiny human nailed me with half a baguette. I'm not hungry anyway. -Motivation -Speed
+
+<Leave>
+40 I decided that I shouldn't bother the locals, but in doing so met a kind human who told me about a shortcut. Score! +Distance +Exp
+
+30 Leaving the locals and their bread along is the right decision I know, but I'm going to be thinking about food for a while...
+
+20 I decided that I shouldn't pester the locals, but half an hour later when the bread had been dished out, I realised I'd been staring at them the whole time. Awkward. -Speed

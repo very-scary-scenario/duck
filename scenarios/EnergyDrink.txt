@@ -10,7 +10,7 @@ Water
 
 35 I don't think energy drinks are for me. This tastes weird.
 
-40 I thought this was an energy drink but it might have been alcohol? I don't read human and I seem to have wandered in the wrong direction. -Distance
+40 I thought this was an energy drink but it might have been alcohol? I can't read human and I seem to have wandered in the wrong direction. -Distance
 
 <Soda>
 35 This soda has quenched my thirst and there's a bubbly feeling in my stomach. This might catch on! +Exp
