@@ -186,6 +186,7 @@ class Duck:
     def initiate_scenario(self):
         if self.progress > self.total_distance():
             self.success = True
+            self.experience += 1
             yield 'I made it!'
             return
 
