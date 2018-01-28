@@ -1,0 +1,41 @@
+<Scenario>
+I’m in a park and just found a little stage! Should I do a performance?
+
+Sing
+Comedy
+Leave
+
+<Sing>
+30 I decide to sing a song from a children’s cartoon I watch every week. The other ducks in the park love it. +Motivation
+
+30 I sung my favourite pop song that my friends don’t like! Turns out, the people in the park don’t either. -Motivation
+
+10 If a duck sings in a park, and nobody is around to hear it, does it make a sound? Well, I had fun.
+
+20 I got yelled at for quacking too much. -Motivation
+
+10 I guess I’m not a good singer. I got chased back out of the park. -Distance -Motivation
+
+<Comedy>
+5 “What’s a duck’s favourite snack? Cheese and quackers!” I told my best joke, and the audience loved it! +Motivation
+
+10 “Quack quack, who’s there” +Exp
+
+10 “My favourite Pink Floyd album is The Duck Side of the Moon!” I like that joke, and the audience did too. +Exp
+
+10 “Twitter said I should do something on stage, I decided to quack a joke!” +Exp
+
+10 “As I approached the stage, I was told ’no fowl language’” +Exp
+
+10 I got on stage and I couldn’t think of anything and ran away. +Speed -Motivation
+
+10 “That’s not a gun in my duck pocket…” not my best one liner I’ll be honest, and the audience agrees. -Motivation
+
+10 “What social media website does a duck use? Quackr!” The audience boos, not my best joke. -Motivation
+
+<Leave>
+10 As I begun to leave, a bunch of kids who were bored with the stage acts came over and fed me bread!!! +Speed +Exp
+
+60 I decided against making a fool of myself on stage. I can’t even hold the prize (a briefcase full of money).
+
+20 Not going on stage was probably a good idea, but I could’ve done with some human money to get something to eat. -Motivation
