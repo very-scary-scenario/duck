@@ -71,8 +71,9 @@ class Duck:
             .format(
                 motivation=self.motivation,
                 total=total,
-                progres=min(self.progress, total),
+                progress=min(self.progress, total),
                 experience=self.experience,
+                speed=self.speed,
             )
         ).strip()
 
