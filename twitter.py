@@ -102,7 +102,11 @@ if __name__ == '__main__':
 
     if advancement is not None:
         for string in advancement:
-            if duck.scenario is None and duck.success is None:
+            if (
+                duck.scenario is None and
+                duck.success is None and
+                duck.progress > 0
+            ):
                 twitter.update_status(
                     string,
                     in_reply_to_status_id=latest_tweet.id
