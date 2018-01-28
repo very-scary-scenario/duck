@@ -177,8 +177,8 @@ class Duck:
 
         if self.experience == 0:
             yield (
-                "I'm new to this whole journeyduck thing, please me out if "
-                "you can, Twitter!"
+                "I'm new to this whole journeyduck thing, please help me out "
+                "if you can, Twitter!"
             )
         else:
             yield "Heading off somewhere else now. I'll keep you updated."
