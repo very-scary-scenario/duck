@@ -1,77 +1,109 @@
-==Cities
-Aberdeen/57.1526, -2.11
-Bath/51.38, -2.36
-Birmingham/52.483056, -1.893611
-Bristol/51.45, -2.583333
-Cambridge/52.205, 0.119
-Cardiff/51.483333, -3.183333
-Carlisle/54.890833, -2.943889
-Chester/53.1903, -2.8916
-Coventry/52.408056, -1.510556
-Derby/52.922, -1.475833
-Dundee/56.462, -2.9707
-Durham/54.7761, -1.5733
-Edinburgh/55.953056, -3.188889
-Exeter/50.716667, -3.533333
-Glasgow/55.858, -4.259
-Inverness/57.4718, -4.2254
-Lancaster/54.047, -2.801
-Leeds/53.799722, -1.549167
-Leicester/52.633333, -1.133333
-Liverpool/53.4, -2.983333
-London/51.5155, -0.0922
-Manchester/53.466667, -2.233333
-Newcastle/54.966667, -1.6
-Newport/51.583333, -3
-Nottingham/52.953417, -1.150028
-Norwich/52.6, 1.3
-Oxford/51.751944, -1.257778
-Perth/56.397, -3.437
-Peterborough/52.583333, -0.25
-Plymouth/50.371389, -4.142222
-Portsmouth/50.816667, -1.083333
-Preston/53.759, -2.699
-Sheffield/53.383611, -1.466944
-Sunderland/54.91, -1.385
-Swansea/51.616667, -3.95
-Wolverhampton/52.583333, -2.133333
-York/53.958333, -1.080278
+==town names
+aberdeen/57.1526, -2.11
+amble/55.3306, -1.5783
+bath/51.38, -2.36
+birmingham/52.483056, -1.893611
+blackpool/53.814167, -3.050278
+bristol/51.45, -2.583333
+cambridge/52.205, 0.119
+cannock/52.6999408, -2.0218293
+cardiff/51.483333, -3.183333
+carlisle/54.890833, -2.943889
+chester/53.1903, -2.8916
+coalville/52.724569, -1.3677109
+coventry/52.408056, -1.510556
+cramond/55.975209, -3.299633
+crewe/53.100404, -2.4438208
+derby/52.922, -1.475833
+dundee/56.462, -2.9707
+durham/54.7761, -1.5733
+edinburgh/55.953251, -3.188266
+exeter/50.716667, -3.533333
+giggleswick/54.072968, -2.2897949
+glasgow/55.858, -4.259
+glasgow/55.864237, -4.251805
+glen parva/52.5873308, -1.1612856
+glenfield/52.6464805, -1.2023165
+groby/52.6591542, -1.2234660
+haslington/53.100076, -2.395320
+hugglescote/52.713628, -1.36752
+ibstock/52.694644, -1.401394
+inverness/57.4718, -4.2254
+kingston-upon-thames/51.41232, -0.300689
+lancaster/54.047, -2.801
+leeds/53.799722, -1.549167
+leicester forest east/52.6255101, -1.210330
+leicester/52.633333, -1.133333
+liverpool/53.4, -2.983333
+london/51.5073508, -0.1277582
+manchester/53.466667, -2.233333
+market drayton/52.903551, -2.483484
+markfield/52.689224, -1.277133
+matlock/53.14, -1.55
+milford/53.002443, -1.480600
+morpeth/55.163, -1.678
+musselburgh/55.941941, -3.053918
+nantwich/53.067184, -2.524101
+newcastle-under-lyme/53.013207, -2.2273001
+newcastle/54.966667, -1.6
+newport/51.583333, -3
+norwich/52.6, 1.3
+nottingham/52.953417, -1.150028
+oadby/52.5991535, -1.0783725
+oxford/51.751944, -1.257778
+pegswood/55.1798, -1.6442
+penkridge/52.725155, -2.116371
+perth/56.397, -3.437
+peterborough/52.583333, -0.25
+plymouth/50.371389, -4.142222
+portsmouth/50.816667, -1.083333
+preston/53.759, -2.699
+reading/51.454167, -0.973056
+rugeley/52.761515, -1.935967
+shavington/53.062781, -2.448186
+sheffield/53.383611, -1.466944
+stafford/52.8073269, -2.1157951
+stoke d'abernon/51.318697, -0.384045
+stoke-on-trent/53.002668, -2.179403
+sunderland/54.91, -1.385
+swansea/51.616667, -3.95
+tamworth/52.633583, -1.691031
+thurmaston/52.6719771, -1.0911742
+thurnby/52.62888, -1.0455286
+ulgham/55.2252, -1.6329
+uttoxeter/52.898115, -1.865801
+walsall/52.586213, -1.982919
+whitchurch/52.968716, -2.682045
+wigston/52.5863178, -1.1063538
+willaston/53.292611, -3.00752
+wistaston/53.0872628, -2.4825064
+wolverhampton/52.583333, -2.133333
+york/53.958333, -1.080278
 
-==Smaller Places
-Amble/55.3306, -1.5783
-Pegswood/55.1798, -1.6442
-Morpeth/55.163, -1.678
-Ulgham/55.2252, -1.6329
-Crewe/53.099, -2.44
-Nantwich/53.067, -2.522
-Reading/51.454167, -0.973056
-Matlock/53.14, -1.55
-Blackpool/53.814167, -3.050278
+==parks/nature reserves
+barton hills/51.956, -0.418
+conway rspb/53.277, -3.802
+ford moss/55.6311, -2.0492
+fore wood/50.888, 0.493
+gibraltar point/53.09641, 0.32838
+lodmoor/50.631, -2.442
+sandwell valley rpsb/52.5331, -1.95
+titchfield haven/50.8205, -1.24471
+wolves wood/52.056, 0.995
 
-==Parks/nature reserves
-Ford Moss/55.6311, -2.0492
-Gibraltar Point/53.09641, 0.32838
-Conway RSPB/53.277, -3.802
-Sandwell Valley RPSB/52.5331, -1.95
-Wolves Wood/52.056, 0.995
-Lodmoor/50.631, -2.442
-Fore Wood/50.888, 0.493
-Barton Hills/51.956, -0.418
-Titchfield Haven/50.8205, -1.24471
+==water
+haweswater/54.518889, -2.804722
+kenfig pool/51.5194, -3.7362
+kielder/55.183333, -2.5
+llyn cowlyd/53.133333, -3.916667
+windermere/54.358333, -2.936111
 
-==Water
-Kielder/55.183333, -2.5
-Windermere/54.358333, -2.936111
-Haweswater/54.518889, -2.804722
-Llyn Cowlyd/53.133333, -3.916667
-Kenfig Pool/51.5194, -3.7362
-
-==Other Places of Interest
-Northumberlandia/55.088389, -1.628083
-Buckingham Palace/51.500833, -0.141944
-Big Ben/51.5007, -0.1245
-Bamburgh Castle/55.608, -1.709
-Alton Towers/52.9875, -1.890833
-Flamingo Land/54.2097, -0.8082
-Chessington World of Adventures/51.348611, -0.316667
-Blackpool Tower/53.815833, -3.055278
+==other places of interest
+alton towers/52.9875, -1.890833
+bamburgh castle/55.608, -1.709
+big ben/51.5007, -0.1245
+blackpool tower/53.815833, -3.055278
+buckingham palace/51.500833, -0.141944
+chessington world of adventures/51.348611, -0.316667
+flamingo land/54.2097, -0.8082
+northumberlandia/55.088389, -1.628083
