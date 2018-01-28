@@ -49,7 +49,7 @@ def get_duck():
 def get_latest_duck_tweet():
     tweets = [
         tw for tw in
-        twitter.user_timeline(twitter.me())
+        twitter.user_timeline(screen_name=auth.username)
         if tw.in_reply_to_status_id is None
         and not tw.retweeted
     ]
@@ -61,12 +61,15 @@ def get_latest_duck_tweet():
 if __name__ == '__main__':
     duck, filename = get_duck()
 
-    latest_tweet = get_latest_duck_tweet()
+    latest_tweet = None
 
     # respecting next_active here makes sense even if similar logic is already
     # in Duck, since on the CLI there's no reason to force the player to wait,
     # but on twitter we really want people to get an opportunity to vote
-    if duck.scenario and latest_tweet and (now() > duck.next_active):
+    if duck.scenario and (now() > duck.next_active):
+        latest_tweet = get_latest_duck_tweet()
+
+    if latest_tweet:
         replies = [
             s for s in twitter.mentions_timeline(
                 since_id=latest_tweet.id,
