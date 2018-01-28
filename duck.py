@@ -170,6 +170,19 @@ class Duck:
 
         return image
 
+    def set_off(self):
+        hours = DELAY_MINIMUM + (random.random() * DELAY_VARIANCE)
+        self.delay_next_activity(hours)
+        self.progress += (hours * self.speed)
+
+        if self.experience == 0:
+            yield (
+                "I'm new to this whole journeyduck thing, please me out if "
+                "you can, Twitter!"
+            )
+        else:
+            yield "Heading off somewhere else now. I'll keep you updated."
+
     def initiate_scenario(self):
         if self.progress > self.total_distance():
             self.success = True
@@ -237,7 +250,10 @@ class Duck:
         if self.success is not None:
             raise RuntimeError('this game is already over')
 
-        if self.scenario is None:
+        if self.progress == 0:
+            return self.set_off()
+
+        elif self.scenario is None:
             if self.next_active < now():
                 return self.initiate_scenario()
         else:
