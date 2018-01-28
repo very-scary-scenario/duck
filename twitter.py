@@ -105,7 +105,7 @@ if __name__ == '__main__':
             if (
                 duck.scenario is None and
                 duck.success is None and
-                duck.progress > 0
+                filename  # filename is None if this is a fresh duck
             ):
                 twitter.update_status(
                     string,
