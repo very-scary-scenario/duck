@@ -62,7 +62,8 @@ class Duck:
             if km > self.progress and last_ls:
                 return last_ls
 
-            last_ls = ls
+            if ls is not None:
+                last_ls = ls
 
     def progress_summary(self):
         return (
@@ -81,7 +82,11 @@ class Duck:
         Return the last point of Duck's travelled route.
         """
 
-        return self.get_travel()[-1]
+        travel = self.get_travel()
+        if travel is None:
+            return self.route[0]
+        else:
+            return travel[-1]
 
     def get_map_url(self):
         marker_fmt = dict(
