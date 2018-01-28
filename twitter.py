@@ -1,6 +1,7 @@
-from camel import Camel
+from collections import Counter
 import os
 
+from camel import Camel
 import tweepy
 
 from duck import now, registry, _sample_duck
@@ -40,9 +41,9 @@ def get_duck():
         if latest_duck.success is None:
             return (latest_duck, latest_duck_filename)
         else:
-            return (_sample_duck(), None)
+            return (_sample_duck(), None)  # start from where we finished
     else:
-        return (_sample_duck(), None)
+        return (_sample_duck(), None)  # start from scratch
 
 
 def get_latest_duck_tweet():
@@ -62,7 +63,38 @@ if __name__ == '__main__':
 
     latest_tweet = get_latest_duck_tweet()
 
-    advancement = duck.advance()
+    # respecting next_active here makes sense even if similar logic is already
+    # in Duck, since on the CLI there's no reason to force the player to wait,
+    # but on twitter we really want people to get an opportunity to vote
+    if duck.scenario and latest_tweet and (now() > duck.next_active):
+        replies = [
+            s for s in twitter.mentions_timeline(
+                since_id=latest_tweet.id,
+                tweet_mode='extended',
+            ) if s.in_reply_to_status_id == latest_tweet.id
+        ] if duck.scenario and latest_tweet else []
+
+        votes = {}
+
+        for reply in replies:
+            if reply.user.id in votes:
+                continue
+
+            answer = duck.scenario.answer_for(reply.full_text)
+            if answer is None:
+                continue
+            votes[reply.user.id] = answer['answer']
+
+        if votes:
+            counter = Counter(votes.values())
+            most_common, = counter.most_common(1)
+            response, _ = most_common
+        else:
+            response = None
+    else:
+        response = None
+
+    advancement = duck.advance(response)
 
     if advancement is not None:
         for string in advancement:
