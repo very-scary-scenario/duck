@@ -15,7 +15,7 @@ BASE_PADDING = 6
 ALIAS_FACTOR = 4
 GOOGLE_LOGO_PAD = 26  # the height of the google logo on street view renders
 ICON_PREFIX = (
-    'https://raw.githubusercontent.com/very-scary-scenario/ggj2018/master'
+    'https://raw.githubusercontent.com/very-scary-scenario/duck/master'
     '/icons/'
 )
 
