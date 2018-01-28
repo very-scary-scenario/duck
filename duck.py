@@ -170,10 +170,13 @@ class Duck:
 
         return image
 
-    def set_off(self):
+    def make_progress(self):
         hours = DELAY_MINIMUM + (random.random() * DELAY_VARIANCE)
         self.delay_next_activity(hours)
         self.progress += (hours * self.speed)
+
+    def set_off(self):
+        self.make_progress()
 
         if self.experience == 0:
             yield (
@@ -232,9 +235,7 @@ class Duck:
                 self.experience = min(0, self.experience - 5)
                 yield "I give up. I'm going somewhere else."
 
-        hours = DELAY_MINIMUM + (random.random() * DELAY_VARIANCE)
-        self.delay_next_activity(hours)
-        self.progress += (hours * self.speed)
+        self.make_progress()
 
     def delay_next_activity(self, hours):
         self.next_active = now() + timedelta(hours=hours)
