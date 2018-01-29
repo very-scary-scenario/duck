@@ -6,7 +6,7 @@ Cross
 Turn back
 
 <Search> 
-20 I started walking along the road and I found a little tunnel underneath the road! I didn’t need to take a detour! +Exp +Speed
+20 I started walking along the road and I found a little tunnel that runs underneath it! I didn’t need to take a detour! +Exp +Speed
 
 60 I walked for a while and found a crossing. Nothing gained, nothing lost, but at least I don’t need to take a big detour.
 
