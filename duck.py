@@ -34,7 +34,7 @@ class Duck:
         self.route = route
         self.progress = 0
         self.speed = BASE_SPEED
-        self.motivation = 10
+        self.motivation = 3
         self.experience = 0
         self.scenario = None
         self.last_scenario = None
