@@ -20,6 +20,6 @@ Leave
 70 I didn't win anything. Ah well, maybe next time. -Speed
 
 <Leave>
-85 The lottery human understood and wished me good luck on my travels. Very nice of them! 
+85 The lottery human understood that I wanted to leave and wished me good luck on my travels. Very nice of them! 
 
 15 The lottery human didn't mind that I wasn't playing, but I knocked over the machine as I left and spent an hour chasing tiny balls around. #Fail -Speed
