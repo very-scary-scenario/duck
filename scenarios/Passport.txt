@@ -6,7 +6,7 @@ Flap
 Escape
 
 <Quack> 
-25 I quacked until the person went away! Success! +Exp
+25 I quacked until the person went away. Success! +Exp
 
 40 After quacking for a solid twenty minutes, the human realised I was a duck and let me go. I'm leaving before they come back!
 
