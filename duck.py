@@ -232,7 +232,7 @@ class Duck:
 
             if self.motivation <= 0:
                 self.success = False
-                self.experience = min(0, self.experience - 5)
+                self.experience = max(0, self.experience - 5)
                 yield "I give up. I'm going somewhere else."
 
         self.make_progress()
