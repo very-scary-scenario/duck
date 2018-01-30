@@ -1,0 +1,27 @@
+﻿<Scenario>
+Hey Twitter! I can see one of those animals that are super popular with humans. It's like a duck but without a beak, it's much fluffier and it has those claw things. Is it okay to say hello?
+
+Hello
+Pet
+Run
+
+<Hello> 
+20 I said hello to the animal and they were incredibly excited to see me. They didn't say much (or anything, really) but they did let me eat from their food bowl. Thank you, fluffy friend! +Motivation +Exp
+
+45 I tried to say hello to the beakless animal but it was much bigger than it first looked. I settled instead for gazing at it for a while, wondering if their shampoo would also make my feathers glossy.
+
+35 I was determined to say hello to this furry creature, but no matter how much I quacked, it never quacked back. I just wanted to be friends :( -Speed
+
+<Pet>
+25 After working up the courage to do so, I went to pet the fluffy animal. They became very affectionate and allowed me to ride on their back for a short while. Now I really feel like an adventurer! +Exp +Distance
+
+40 I didn't hesitate in trying to pet the animal. As soon as my wing touched their silky fur, I felt all of my fatigue just melt away. Highly recommended. +Speed
+
+35 Trying to pet the claw monster was a terrible idea. It took me fifteen minutes but I finally managed to lose it #TinyWebbers #JustDuckProblems -Distance
+
+<Run>
+65 To prevent disruption to my travels, I played it safe and ran to a nearby bush. The animal passed by quickly while I hid, after which I hightailed it out of there! +Exp +Speed
+
+20 I ran away from the animal but it came up to me all fluffy-like and licked my face. I smell a bit weird now but at least my beak is clean?
+
+15 I ran as fast as I could but it was too late. It ran up to me in a flash, scooped me up in its mouth and carried me back the way I came. Now I'm all covered in slobber... -Distance
