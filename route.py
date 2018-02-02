@@ -50,7 +50,7 @@ def random_route():
     )
 
 
-def random_point_near(point, experience=None):
+def random_point_near(point, experience=None, exclude=()):
     annotated_places = sorted(({
         **p,
         'distance': _distance_between(point, p['point'])
@@ -68,6 +68,12 @@ def random_point_near(point, experience=None):
             # starting from
             continue
 
+        for excluded in exclude:
+            if _distance_between(excluded, place['point']) < 0.2:
+                # this is an excluded point, or close enough that we should
+                # not allow it
+                continue
+
         options.append(place)
 
     return random.choice(options)['point']
@@ -79,8 +85,8 @@ def _googlify(point):
     return '{},{}'.format(point.x, point.y)
 
 
-def random_route_from(point, experience=None):
-    destination = random_point_near(point, experience=experience)
+def random_route_from(point, experience=None, exclude=()):
+    destination = random_point_near(point, experience=experience, exclude=())
     route, = directions(_googlify(point), _googlify(destination))['routes']
     return LineString(
         polyline.decode(route['overview_polyline']['points']),

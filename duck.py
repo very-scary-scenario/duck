@@ -77,13 +77,16 @@ class Duck:
             )
         ).strip()
 
+    def get_destination(self):
+        return self.route[-1]
+
     def get_position(self):
         """
         Return the last point of Duck's travelled route.
         """
 
         if self.success is True:
-            return self.route[-1]
+            return self.get_destination()
 
         travel = self.get_travel()
 
@@ -244,6 +247,9 @@ class Duck:
         return Duck(random_route_from(
             Point(*self.get_position(), srid=4326),
             experience=self.experience,
+            exclude=[
+                Point(*self.get_destination(), srid=4326),
+            ],
         ), experience=self.experience)
 
     def advance(self, response=None):
