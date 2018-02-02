@@ -30,12 +30,12 @@ def now():
 
 
 class Duck:
-    def __init__(self, route):
+    def __init__(self, route, experience=0):
         self.route = route
         self.progress = 0
         self.speed = BASE_SPEED
-        self.motivation = 3
-        self.experience = 0
+        self.experience = experience
+        self.motivation = 3 + int(experience/5)
         self.scenario = None
         self.last_scenario = None
         self.success = None
@@ -241,12 +241,10 @@ class Duck:
         self.next_active = now() + timedelta(hours=hours)
 
     def make_successor(self):
-        successor = Duck(random_route_from(
+        return Duck(random_route_from(
             Point(*self.get_position(), srid=4326),
             experience=self.experience,
-        ))
-        successor.experience = self.experience
-        return successor
+        ), experience=self.experience)
 
     def advance(self, response=None):
         if self.success is not None:
