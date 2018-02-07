@@ -2,16 +2,27 @@
 Aberdeen/57.1526, -2.11
 Aberfeldy/56.618134, -3.8655
 Aberystwyth/52.414, -4.081
+Acharacle/56.745, -5.802
 Achiltibuie/58.02, -5.34
 Achmelvich/58.17, -5.3
+Aird of Sleat/57.0332, -5.9645
+Airor/57.083, -5.764
 Alnwick/55.4134, -1.7069
+Alston/54.81, -2.441
+Altnaharra/58.28, -4.45
+Alton/51.1498, -0.9769
 Amble/55.3306, -1.5783
 Applecross/57.43304, -5.80958
 Arbroath/56.561385, -2.585705
+Ardtaraig/55.997656, -5.114755
 Arisaig/56.91103, -5.84252
+Arrochar/56.200743, -4.746727
 Aviemore/57.194, -3.823
+Axminster/50.781, -3
+Aylesbury/51.8168, -0.8124
 Ayr/55.458564, -4.629179
 Ballater/57.0448, -3.04942
+Banbury/52.061, -1.336
 Banff/57.667, -2.524
 Bangor/53.228, -4.128
 Barrow-in-Furness/54.1108, -3.2261
@@ -21,10 +32,20 @@ Bedford/52.1337, -0.4577
 Berwick-upon-Tweed/55.771, -2.007
 Bettyhill/58.53, -4.22
 Bideford/51.016, -4.209
+Birdfield/56.09, -5.28
 Birmingham/52.483056, -1.893611
 Blackpool/53.814167, -3.050278
+Blairgowrie/56.592018, -3.340137
+Blandford Forum/50.856, -2.1648
+Bodmin/50.466, -4.718
+Bognor Regis/50.78237, -0.67639
+Bonar Bridge/57.8918, -4.3371
+Boston/52.974, -0.0214
 Bournemouth/50.72, -1.88
 Bradford/53.8, -1.75206
+Braemar/57.006, -3.399
+Braintree/51.878, 0.55
+Brecon/51.948, -3.391
 Bridlington/54.0819, -0.1923
 Brighton/50.842941, -0.131312
 Bristol/51.45, -2.583333
@@ -33,33 +54,46 @@ Brora/58.01, -3.85
 Buckie/57.676, -2.965
 Bude/50.824, -4.542
 Burnley/53.789, -2.248
+Bury St Edmunds/52.2474, 0.7183
 Cambridge/52.205, 0.119
+Campbeltown/55.423308, -5.607729
 Cannock/52.6999408, -2.0218293
 Canterbury/51.275, 1.087
 Cardiff/51.483333, -3.183333
 Carlisle/54.890833, -2.943889
+Carmarthen/51.856, -4.316
 Chelmsford/51.7361, 0.4798
 Cheltenham/51.883333, -2.066667
 Chester/53.1903, -2.8916
 Chesterfield/53.235833, -1.4275
+Chichester/50.83652, -0.77918
+Chulmleigh/50.912778, -3.869167
 Clacton-on-Sea/51.7918, 1.1457
 Coalville/52.724569, -1.3677109
 Colchester/51.8917, 0.903
+Corwen/52.98, -3.379
 Coventry/52.408056, -1.510556
 Cramond/55.975209, -3.299633
+Crawley/51.109167, -0.187222
 Crewe/53.100404, -2.4438208
 Crieff/56.37568, -3.84262
+Croick/57.8868, -4.607571
 Cromer/52.931, 1.302
 Croydon/51.3727, -0.1099
 Cruden Bay/57.417254, -1.852485
+Darlington/54.527, -1.5526
 Derby/52.922, -1.475833
+Dereham/52.681, 0.94
 Dingwall/57.597, -4.428
 Doncaster/53.515, -1.133
 Dornoch/57.88, -4.03
 Dounreay/58.57814, -3.75233
 Dover/51.1295, 1.3089
+Driffield/54.005, -0.438
+Drimnin/56.6, -5.97
 Drumnadrochit/57.3373, -4.48
 Dufftown/57.445, -3.128
+Duisky/56.84013, -5.26225
 Dumfries/55.07, -3.603
 Dunbar/56.002725, -2.516901
 Dundee/56.462, -2.9707
@@ -72,6 +106,7 @@ Durness/58.57, -4.75
 Eastbourne/50.77, 0.28
 Edinburgh/55.953251, -3.188266
 Elgin/57.65, -3.315
+Elphin/58.053231, -5.030673
 Ely/52.4, 0.26
 Exeter/50.716667, -3.533333
 Eyemouth/55.871, -2.093
@@ -79,13 +114,18 @@ Felixstowe/51.9639, 1.3515
 Fishguard/51.9982, -4.98041
 Forfar/56.64423, -2.88842
 Forres/57.608, -3.62
+Forsinard/58.36, -3.9
 Fort Augustus/57.14319, -4.68066
 Fort William/56.819817, -5.105218
 Fraserburgh/57.693, -2.005
+Furnace/56.153288, -5.181776
+Gainsborough/53.4016, -0.7732
 Gairloch/57.728, -5.691
 Galashiels/55.6194, -2.8033
+Garve/57.61429, -4.68481
 Giggleswick/54.072968, -2.2897949
 Girvan/55.23822, -4.85614
+Glaichbea/57.43099, -4.48751
 Glasgow/55.864237, -4.251805
 Glastonbury/51.1485, -2.714
 Glen Parva/52.5873308, -1.1612856
@@ -93,6 +133,7 @@ Glencoe/56.68282, -5.10598
 Glenfield/52.6464805, -1.2023165
 Glenfinnan/56.866667, -5.45
 Glenrothes/56.198, -3.178
+Glenuig/56.829722, -5.819167
 Gloucester/51.87, -2.24
 Golspie/57.973, -3.9771
 Grantham/52.918, -0.638
@@ -100,17 +141,22 @@ Great Budworth/53.283, -2.5
 Great Yarmouth/52.606, 1.729
 Greenock/55.95, -4.765
 Gretna Green/55.002, -3.066
+Grigadale/56.723333, -6.201667
 Grimsby/53.5595, -0.068
 Groby/52.6591542, -1.2234660
 Halifax/53.725, -1.863
+Halkirk/58.51, -3.49
+Harlow/51.779, 0.128
 Harrogate/53.991, -1.539
 Hartlepool/54.69, -1.21
+Haslemere/51.09, -0.712
 Haslington/53.100076, -2.395320
 Hastings/50.855, 0.583333
 Hawick/55.422145, -2.787549
 Helmsdale/58.12, -3.66
 Hereford/52.0565, -2.716
 Holyhead/53.309, -4.633
+Horncastle/53.208, -0.114
 Hornsea/53.9108, -0.1676
 Huddersfield/53.645, -1.7798
 Hugglescote/52.713628, -1.36752
@@ -118,29 +164,42 @@ Hull/53.744333, -0.3325
 Hunstanton/52.93, 0.48
 Ibstock/52.694644, -1.401394
 Invergordon/57.68792, -4.15704
+Inverie/57.0377, -5.6833
 Inverness/57.4718, -4.2254
 Inverurie/57.28, -2.38
+Ipswich/52.059444, 1.155556
 Irvine/55.6201, -4.6614
 John o' Groats/58.64, -3.07
+Keiss/58.535, -3.119
 Keith/57.543, -2.952
 Kendal/54.326, -2.745
 Kettering/52.39312, -0.72292
+Kilchoan/56.698, -6.1033
+Kilmarnock/55.61106, -4.49571
+Kilnsea/53.620856, 0.129497
+Kinbrace/58.260095, -3.940845
 King's Lynn/52.7543, 0.3976
-Kingston-upon-thames/51.41232, -0.300689
+Kingston upon Thames/51.41232, -0.300689
 Kinlochbervie/58.46, -5.05
+Kinlochewe/57.6045, -5.3033
 Kirkcaldy/56.11073, -3.16737
 Kyle of Lochalsh/57.28, -5.72
 Lairg/58.02, -4.4
 Lancaster/54.047, -2.801
+Launceston/50.635, -4.354
 Leeds/53.799722, -1.549167
 Leicester Forest East/52.6255101, -1.210330
 Leicester/52.633333, -1.133333
 Lincoln/53.23272, -0.537661
 Liverpool/53.4, -2.983333
 Livingston/55.8834, -3.5157
+Llandrindod Wells/52.24354, -3.38547
+Llanelli/51.684, -4.163
+Lochgoilhead/56.171974, -4.904185
 Lockerbie/55.12, -3.357
 London/51.5073508, -0.1277582
 Lossiemouth/57.7189, -3.2875
+Louth/-30.533333, 145.116667
 Lowestoft/52.48, 1.75
 Luton/51.87975, -0.417556
 Lybster/58.3, -3.28
@@ -151,33 +210,44 @@ Manchester/53.466667, -2.233333
 Margate/51.385, 1.3838
 Market Drayton/52.903551, -2.483484
 Markfield/52.689224, -1.277133
+Marlborough/51.42, -1.73
 Matlock/53.14, -1.55
+Melvaig/57.80883, -5.794
+Merthyr Tydfil/51.743, -3.378
 Middlesbrough/54.5767, -1.2355
+Middleton-in-Teesdale/54.6229, -2.0779
 Milford/53.002443, -1.480600
 Milford Haven/51.71418, -5.04274
 Milton Keynes/52.04, -0.76
 Minehead/51.2038, -3.4738
+Mold/53.166, -3.133
 Montrose/56.708, -2.467
 Morar/56.969457, -5.82157
 Morpeth/55.163, -1.678
+Muasdale/55.60006, -5.68461
 Musselburgh/55.941941, -3.053918
 Nairn/57.586, -3.869
 Nantwich/53.067184, -2.524101
-Newcastle-under-lyme/53.013207, -2.2273001
+Narberth/51.7989, -4.7423
+New Cumnock/55.3968, -4.1839
+Newcastle-under-Lyme/53.013207, -2.2273001
 Newcastle/54.966667, -1.6
 Newport/51.583333, -3
 Newquay/50.412, -5.0757
 Newton Stewart/54.958, -4.492
 Newtonmore/57.0692, -4.1188
+Newtown/52.5132, -3.3141
 North Berwick/56.058, -2.717
 Northampton/52.230375, -0.893753
 Norwich/52.6, 1.3
 Nottingham/52.953417, -1.150028
 Oadby/52.5991535, -1.0783725
 Oban/56.412, -5.472
+Okehampton/50.7388, -4.0041
 Oswestry/52.8598, -3.0538
 Oxford/51.751944, -1.257778
 Paisley/55.846627, -4.423636
+Peebles/55.65, -3.18
 Pegswood/55.1798, -1.6442
 Penkridge/52.725155, -2.116371
 Penzance/50.119, -5.537
@@ -185,8 +255,10 @@ Perth/56.397, -3.437
 Peterborough/52.583333, -0.25
 Peterhead/57.5091, -1.7832
 Plymouth/50.371389, -4.142222
+Pocklington/53.9275, -0.7777
 Poole/50.716667, -1.983333
 Poolewe/57.765, -5.604
+Portavadie/55.8735, -5.3103
 Portpatrick/54.84504, -5.12429
 Portree/57.412, -6.192
 Portsmouth/50.816667, -1.083333
@@ -194,8 +266,13 @@ Preston/53.759, -2.699
 Pwllheli/52.887, -4.418
 Reading/51.454167, -0.973056
 Rhyl/53.321, -3.48
+Richmond/54.403, -1.737
+Rosehall/57.9825, -4.5881
+Royal Tunbridge Wells/51.132, 0.263
 Rugeley/52.761515, -1.935967
+Saffron Walden/52.022, 0.243
 Salcombe/50.237, -3.782
+Salen/56.71586, -5.77477
 Salisbury/51.074, -1.7936
 Scarborough/54.2773, -0.4017
 Scourie/58.352, -5.1497
@@ -204,34 +281,51 @@ Shavington/53.062781, -2.448186
 Sheffield/53.383611, -1.466944
 Shieldaig/57.5228, -5.6505
 Shrewsbury/52.708, -2.754
+Sligachan/57.289334, -6.175554
 Southampton/50.9014, -1.4041
 Southend-on-Sea/51.53789, 0.71377
 Southport/53.6454, -3.0083
 St Andrews/56.3404, -2.7955
+St Davids/51.882, -5.269
 St Ives/52.334362, -0.076147
 Stafford/52.8073269, -2.1157951
+Stanhope/55.553, -3.393
 Stein/57.51407, -6.5592
+Stevenage/51.9, -0.2
+Stirling/56.1172, -3.9397
 Stockton-on-Tees/54.57, -1.32
 Stoke d'Abernon/51.318697, -0.384045
 Stoke-on-trent/53.002668, -2.179403
+Stonchreggan/56.79947, -5.1531
 Stonehaven/56.964, -2.211
+Stratford-upon-Avon/52.19, -1.71
+Struy/57.42499, -4.66397
 Sunderland/54.91, -1.385
 Swansea/51.616667, -3.95
 Swindon/51.56, -1.78
+Tain/57.81178, -4.0567
 Tamworth/52.633583, -1.691031
 Taunton/51.019, -3.1
 Thurmaston/52.6719771, -1.0911742
 Thurnby/52.62888, -1.0455286
 Thurso/58.596, -3.521
+Tomintoul/57.251, -3.378
 Tongue/58.47839, -4.41799
 Torquay/50.47, -3.53
 Torridon/57.545313, -5.51651
+Toward/55.86445, -4.983484
+Tregaron/52.21962, -3.93517
+Trossachs/56.231, -4.405
+Turriff/57.539031, -2.461141
 Uig/57.586, -6.357
 Ulgham/55.2252, -1.6329
 Ullapool/57.9, -5.166
 Uttoxeter/52.898115, -1.865801
 Walsall/52.586213, -1.982919
+Warminster/51.205, -2.181
 Warrington/53.391667, -2.597222
+Watford/51.655, -0.395694
+Welshpool/52.65966, -3.14725
 Westminster/51.4995, -0.1333
 Whitby/54.4858, -0.6206
 Whitchurch/52.968716, -2.682045
@@ -270,8 +364,13 @@ Windermere/54.358333, -2.936111
 Alton Towers/52.9875, -1.890833
 Bamburgh Castle/55.608, -1.709
 Big Ben/51.5007, -0.1245
+Birdland/51.880278, -1.754167
+Birdworld/51.1828, -0.8407
 Blackpool Tower/53.815833, -3.055278
 Buckingham Palace/51.500833, -0.141944
 Chessington World of Adventures/51.348611, -0.316667
 Flamingo Land/54.2097, -0.8082
 Northumberlandia/55.088389, -1.628083
+Screech Owl Sanctuary/50.407, -4.898
+Thorpe Park/51.404722, -0.513056
+Tropical Birdland/52.631611, -1.29687
