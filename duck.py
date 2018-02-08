@@ -35,7 +35,7 @@ class Duck:
         self.progress = 0
         self.speed = BASE_SPEED
         self.experience = experience
-        self.motivation = 3 + int(experience/5)
+        self.motivation = 3 + int(experience/8)
         self.scenario = None
         self.last_scenario = None
         self.success = None
